@@ -1,0 +1,67 @@
+@import "../../variables/variables.scss";
+@import "../../mixins/mixins.scss";
+
+.camera {
+  @include MarginPadding;
+  width: 100%;
+  background-color: $blackColor;
+  display: grid;
+  grid-template-areas:
+    "blockName foto"
+    "title foto"
+    "link foto"
+    "feedback feedback";
+  &__blockName {
+    @include MarginPadding($margin: 50px 0 50px 54px);
+    @include fontRegular(18px, 28px);
+    grid-area: blockName;
+    color: $whiteColor;
+    text-transform: uppercase;
+  }
+  &__title {
+    @include MarginPadding($margin: 0 81px 359px 50px);
+    @include fontRegular(122px, 122.4px);
+    max-width: 617px;
+    grid-area: title;
+    color: $whiteColor;
+  }
+  &__text {
+    @include MarginPadding($margin: 0 0 180px 54px);
+    @include fontRegular(18px, 28px);
+    color: $whiteColor;
+    grid-area: link;
+    max-width: 400px;
+    text-transform: uppercase;
+  }
+  &__foto {
+    @include MarginPadding($margin: 50px 50px 50px 0);
+    grid-area: foto;
+  }
+  &__feedback-1 {
+    @include MarginPadding;
+    max-width: 692px;
+  }
+  &__feedback-2 {
+    @include MarginPadding;
+    max-width: 692px;
+  }
+  &__feedbackText {
+    @include MarginPadding($margin: 0 0 60px 50px);
+    @include fontRegular(43px, 43.2px);
+    color: $whiteColor;
+    grid-area: feedback;
+    max-width: 748px;
+  }
+  &__feddbackName {
+    @include MarginPadding($margin: 0 0 10px 50px);
+    @include fontRegular(18px, 28px);
+    color: $whiteColor;
+    grid-area: feedback;
+  }
+  &__feddbackMail {
+    @include MarginPadding($margin: 0 0 50px 50px);
+    @include fontRegular(14px, 24px);
+    color: $whiteColor;
+    grid-area: feedback;
+  }
+}

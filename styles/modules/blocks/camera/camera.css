@@ -1,0 +1,82 @@
+.camera {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #000000;
+  display: grid;
+  grid-template-areas: "blockName foto" "title foto" "link foto" "feedback feedback";
+}
+.camera__blockName {
+  margin: 50px 0 50px 54px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 18px;
+  line-height: 28px;
+  grid-area: blockName;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.camera__title {
+  margin: 0 81px 359px 50px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 122px;
+  line-height: 122.4px;
+  max-width: 617px;
+  grid-area: title;
+  color: #FFFFFF;
+}
+.camera__text {
+  margin: 0 0 180px 54px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  grid-area: link;
+  max-width: 400px;
+  text-transform: uppercase;
+}
+.camera__foto {
+  margin: 50px 50px 50px 0;
+  padding: 0;
+  grid-area: foto;
+}
+.camera__feedback-1 {
+  margin: 0;
+  padding: 0;
+  max-width: 692px;
+}
+.camera__feedback-2 {
+  margin: 0;
+  padding: 0;
+  max-width: 692px;
+}
+.camera__feedbackText {
+  margin: 0 0 60px 50px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 43px;
+  line-height: 43.2px;
+  color: #FFFFFF;
+  grid-area: feedback;
+  max-width: 748px;
+}
+.camera__feddbackName {
+  margin: 0 0 10px 50px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  grid-area: feedback;
+}
+.camera__feddbackMail {
+  margin: 0 0 50px 50px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  grid-area: feedback;
+}/*# sourceMappingURL=camera.css.map */
