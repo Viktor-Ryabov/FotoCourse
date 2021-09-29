@@ -1,0 +1,264 @@
+@import "../fonts/font.css";
+.page {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 1440px;
+  background-color: #FFFFFF;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color: #DF2626;
+  min-height: 84px;
+}
+.header__list {
+  list-style: none;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.header__link {
+  font-family: "Roboto_regular";
+  font-size: 16px;
+  line-height: 100%;
+  margin-right: 40px;
+  color: #FFFFFF;
+}
+.header__link:hover {
+  font-family: "Roboto_bold";
+  font-size: 16px;
+  line-height: 100%;
+}
+.header__link:last-of-type {
+  margin-right: 50px;
+}
+.header__logoButton {
+  margin: 0 0 0 50px;
+  padding: 0;
+  width: 40px;
+  -webkit-animation: rotation 3s linear infinite;
+          animation: rotation 3s linear infinite;
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.header__logoButton:hover {
+  cursor: pointer;
+}
+
+.fotoCourse {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-areas: "title foto" "text foto" "button foto";
+}
+.fotoCourse__title {
+  margin: 50px 0 60px 48px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 100px;
+  line-height: 100%;
+  line-height: 110px;
+  grid-area: title;
+  color: #000000;
+}
+.fotoCourse__text {
+  margin: 0 0 170px 54px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 20px;
+  line-height: 100%;
+  color: #000000;
+  line-height: 118%;
+  grid-area: text;
+  max-width: 469px;
+}
+.fotoCourse__button {
+  margin: 0 0 50px 50px;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Roboto_regular";
+  font-size: 18px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  line-height: 133%;
+  grid-area: button;
+  color: #000000;
+  background-color: #FFFFFF;
+  width: 228px;
+  height: 49px;
+  border: 1px solid #000000;
+  border-radius: 24.5px;
+  grid-area: button;
+}
+.fotoCourse__button:hover {
+  font-family: "Roboto_bold";
+  font-size: 18px;
+  line-height: 28px;
+}
+.fotoCourse__foto {
+  margin: 50px 50px 50px 0;
+  padding: 0;
+  grid-area: foto;
+}
+
+.studyComposition {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FFCE00;
+  display: grid;
+  grid-template-areas: "blockName foto" "title foto" "text_1 foto" "text_2 foto" "button foto" "rules rules";
+}
+.studyComposition__blockName {
+  margin: 50px 0 50px 54px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 18px;
+  line-height: 28px;
+  grid-area: blockName;
+  color: #000000;
+  text-transform: uppercase;
+}
+.studyComposition__title {
+  margin: 0 292px 100px 50px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 64px;
+  line-height: 64px;
+  max-width: 400px;
+  grid-area: title;
+  color: #000000;
+}
+.studyComposition__text {
+  margin: 0 0 20px 54px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  grid-area: text_1;
+  max-width: 400px;
+}
+.studyComposition__text_link {
+  font-family: "Roboto_bold";
+  font-size: 18px;
+  line-height: 28px;
+  list-style: none;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+}
+.studyComposition__text_2 {
+  margin: 0 0 198px 54px;
+  padding: 0;
+  font-family: "Roboto_regular";
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  grid-area: text_2;
+  max-width: 400px;
+}
+.studyComposition__button {
+  margin: 0 0 0 50px;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Roboto_regular";
+  font-size: 18px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  line-height: 133%;
+  grid-area: button;
+  color: #000000;
+  background-color: #FFFFFF;
+  width: 228px;
+  height: 49px;
+  border: 1px solid #000000;
+  border-radius: 24.5px;
+  grid-area: button;
+}
+.studyComposition__button:hover {
+  font-family: "Roboto_bold";
+  font-size: 18px;
+  line-height: 28px;
+}
+.studyComposition__foto {
+  margin: 50px 50px 50px 0;
+  padding: 0;
+  grid-area: foto;
+}
+.studyComposition__rules {
+  margin: 100px 54px 50px 54px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  grid-area: rules;
+}
+.studyComposition__compositionRule {
+  margin: 0;
+  padding: 0;
+  width: 291px;
+  font-family: "Roboto_regular";
+  font-size: 18px;
+  line-height: 28px;
+  list-style: none;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+@import "../variables/variables.scss";
+
+//---DISPLAY---
+@mixin flex($direction: column, $justify: center, $alignItems: center, $alignContent: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $alignItems;
+  align-content: $alignContent;
+}
+
+//---POSITION---
+@mixin positionAbsolute($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+//---MARGIN-PADDING---
+@mixin MarginPadding ($margin: 0, $padding: 0) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin elementsNoStyles {
+  list-style: none;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+//---FONTS---
+@mixin fontBold($fontSize, $lineHeigth: 100%) {
+  font-family: "Roboto_bold";
+  font-size: $fontSize;
+  line-height: $lineHeigth;
+}
+@mixin fontRegular($fontSize, $lineHeigth: 100%) {
+  font-family: "Roboto_regular";
+  font-size: $fontSize;
+  line-height: $lineHeigth;
+}
+
+@mixin buttonDesctopStyle{
+  line-height: 133%;
+  grid-area: button;
+  color: $blackColor;
+  background-color: $whiteColor;
+  width: 228px;
+  height: 49px;
+  border: 1px solid $blackColor;
+  border-radius: 24.5px;
+  &:hover{
+    @include fontBold(18px, 28px);
+  }
+}

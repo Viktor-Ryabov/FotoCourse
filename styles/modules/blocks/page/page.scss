@@ -1,0 +1,9 @@
+@import "../../variables/variables.scss";
+@import "../../mixins/mixins.scss";
+
+.page {
+    @include MarginPadding ($margin: 0 auto);
+    @include flex;
+    max-width: 1440px;
+    background-color: #FFFFFF;
+}

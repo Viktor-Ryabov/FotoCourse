@@ -1,0 +1,46 @@
+@import "../../variables/variables.scss";
+@import "../../mixins/mixins.scss";
+
+.header {
+  @include MarginPadding;
+  @include flex($direction: row, $justify: space-between);
+  width: 100%;
+  background-color: $redColor;
+  min-height: 84px;
+
+  &__list {
+    @include elementsNoStyles;
+    @include flex($direction: row);
+  }
+
+  &__link {
+    @include fontRegular(16px);
+    margin-right: 40px;
+    color: $whiteColor;
+    &:hover {
+      @include fontBold(16px);
+    }
+
+    &:last-of-type {
+      margin-right: 50px;
+    }
+  }
+
+  &__logoButton {
+    @include MarginPadding($margin: 0 0 0 50px);
+    width: 40px;
+    animation: rotation 3s linear infinite;
+    // animation-fill-mode: forwards;
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

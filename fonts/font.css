@@ -11,5 +11,5 @@
     url(./__regular/Roboto-Regular.woff) format("woff"),
     url(./__regular/Roboto-Regular.eot) format("eot");
   font-family: "Roboto_regular";
-  font-weight: 500;
+  font-weight: 400;
 }
