@@ -12,11 +12,14 @@
     @include elementsNoStyles;
     @include flex($direction: row);
   }
+  &__links{
+    @include elementsNoStyles;
+    margin-right: 40px;
+    color: $whiteColor;
+  }
 
   &__link {
     @include fontRegular(16px);
-    margin-right: 40px;
-    color: $whiteColor;
     &:hover {
       @include fontBold(16px);
     }

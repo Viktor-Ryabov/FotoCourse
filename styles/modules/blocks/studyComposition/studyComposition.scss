@@ -64,7 +64,7 @@
 
   &__rules{
     @include MarginPadding($margin: 100px 54px 50px 54px);
-    @include flex($direction: row, $justify: space-between);
+    @include flex($direction: row, $justify: space-between, $alignItems: top);
     grid-area: rules;
   }
   &__compositionRule{

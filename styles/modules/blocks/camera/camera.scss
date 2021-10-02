@@ -10,7 +10,10 @@
     "blockName foto"
     "title foto"
     "link foto"
-    "feedback feedback";
+    "feedback1 feedback2"
+    "name1 name2"
+    "mail1 mail2";
+
   &__blockName {
     @include MarginPadding($margin: 50px 0 50px 54px);
     @include fontRegular(18px, 28px);
@@ -37,31 +40,43 @@
     @include MarginPadding($margin: 50px 50px 50px 0);
     grid-area: foto;
   }
-  &__feedback-1 {
-    @include MarginPadding;
-    max-width: 692px;
-  }
-  &__feedback-2 {
-    @include MarginPadding;
-    max-width: 692px;
-  }
   &__feedbackText {
     @include MarginPadding($margin: 0 0 60px 50px);
     @include fontRegular(43px, 43.2px);
     color: $whiteColor;
-    grid-area: feedback;
-    max-width: 748px;
+    &_1 {
+      @include MarginPadding($margin: 0 172px 60px 50px);
+      max-width: 526px;
+      grid-area: feedback1;
+    }
+    &_2 {
+      @include MarginPadding($margin: 0 auto 60px 0);
+      max-width: 497px;
+      grid-area: feedback2;
+    }
   }
-  &__feddbackName {
+  &__feedbackName {
     @include MarginPadding($margin: 0 0 10px 50px);
     @include fontRegular(18px, 28px);
     color: $whiteColor;
-    grid-area: feedback;
+    &_1 {
+      grid-area: name1;
+    }
+    &_2 {
+      margin-left: 0;
+      grid-area: name2;
+    }
   }
-  &__feddbackMail {
+  &__feedbackMail {
     @include MarginPadding($margin: 0 0 50px 50px);
     @include fontRegular(14px, 24px);
     color: $whiteColor;
-    grid-area: feedback;
+    &_1 {
+      grid-area: mail1;
+    }
+    &_2 {
+      grid-area: mail2;
+      margin-left: 0;
+    }
   }
 }
