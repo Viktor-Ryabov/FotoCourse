@@ -7,7 +7,6 @@
   width: 100%;
   background-color: $redColor;
   min-height: 84px;
-
   &__list {
     @include elementsNoStyles;
     @include flex($direction: row);

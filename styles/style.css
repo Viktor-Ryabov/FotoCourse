@@ -10,6 +10,11 @@
   max-width: 1440px;
   background-color: #FFFFFF;
 }
+@media (max-width: 1440px) {
+  .page {
+    max-width: 100%;
+  }
+}
 
 .header {
   margin: 0;
@@ -92,6 +97,15 @@
   display: grid;
   grid-template-areas: "title foto" "text foto" "button foto";
 }
+@media (max-width: 1440px) {
+  .fotoCourse {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+}
 .fotoCourse__title {
   margin: 50px 0 60px 48px;
   padding: 0;
@@ -101,6 +115,12 @@
   line-height: 110px;
   grid-area: title;
   color: #000000;
+}
+@media (max-width: 1440px) {
+  .fotoCourse__title {
+    max-width: 403px;
+    margin: 0 auto 60px 40px;
+  }
 }
 .fotoCourse__text {
   margin: 0 0 170px 54px;
@@ -112,6 +132,12 @@
   line-height: 118%;
   grid-area: text;
   max-width: 469px;
+}
+@media (max-width: 1440px) {
+  .fotoCourse__text {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+  }
 }
 .fotoCourse__button {
   margin: 0 0 50px 50px;
@@ -144,19 +170,41 @@
   font-size: 18px;
   line-height: 28px;
 }
+@media (max-width: 1440px) {
+  .fotoCourse__button {
+    max-width: 100%;
+    margin: 0 auto 40px 40px;
+  }
+}
 .fotoCourse__foto {
   margin: 50px 50px 50px 0;
   padding: 0;
   grid-area: foto;
 }
+@media (max-width: 1440px) {
+  .fotoCourse__foto {
+    max-width: 90%;
+    margin: 0 40px 60px 40px;
+  }
+}
 
 .studyComposition {
   margin: 0;
   padding: 0;
-  width: 100%;
+  max-width: 100%;
   background-color: #FFCE00;
   display: grid;
   grid-template-areas: "blockName foto" "title foto" "text_1 foto" "text_2 foto" "button foto" "rules rules";
+}
+@media (max-width: 1440px) {
+  .studyComposition {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+  }
 }
 .studyComposition__blockName {
   margin: 50px 0 50px 54px;
@@ -177,6 +225,12 @@
   max-width: 400px;
   grid-area: title;
   color: #000000;
+}
+@media (max-width: 1440px) {
+  .studyComposition__title {
+    max-width: 624px;
+    margin: 40px auto 60px 38px;
+  }
 }
 .studyComposition__text {
   margin: 0 0 20px 54px;
@@ -199,6 +253,12 @@
   cursor: pointer;
   color: #000000;
 }
+@media (max-width: 1440px) {
+  .studyComposition__text {
+    max-width: 400px;
+    margin: 0 auto 20px 44px;
+  }
+}
 .studyComposition__text_2 {
   margin: 0 0 198px 54px;
   padding: 0;
@@ -208,6 +268,12 @@
   color: #000000;
   grid-area: text_2;
   max-width: 400px;
+}
+@media (max-width: 1440px) {
+  .studyComposition__text_2 {
+    max-width: 400px;
+    margin: 0 auto 60px 44px;
+  }
 }
 .studyComposition__button {
   margin: 0 0 0 50px;
@@ -240,10 +306,22 @@
   font-size: 18px;
   line-height: 28px;
 }
+@media (max-width: 1440px) {
+  .studyComposition__button {
+    max-width: 100%;
+    margin: 0 auto 50px 40px;
+  }
+}
 .studyComposition__foto {
   margin: 50px 50px 50px 0;
   padding: 0;
   grid-area: foto;
+}
+@media (max-width: 1440px) {
+  .studyComposition__foto {
+    max-width: 90%;
+    margin: 0 40px 60px 40px;
+  }
 }
 .studyComposition__rules {
   margin: 100px 54px 50px 54px;
@@ -254,6 +332,17 @@
   align-items: top;
   align-content: center;
   grid-area: rules;
+}
+@media (max-width: 1440px) {
+  .studyComposition__rules {
+    max-width: 100%;
+    margin: 0 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
 }
 .studyComposition__compositionRule {
   margin: 0;
@@ -268,6 +357,18 @@
   text-decoration: none;
   cursor: pointer;
   cursor: none;
+}
+@media (max-width: 1440px) {
+  .studyComposition__compositionRule {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: #000000 solid 1px;
+  }
+  .studyComposition__compositionRule:last-of-type {
+    margin-bottom: 40px;
+    border-bottom: none;
+  }
 }
 
 .camera {

@@ -42,6 +42,7 @@
   line-height: $lineHeigth;
 }
 
+//---BUTTON---
 @mixin buttonDesctopStyle{
   line-height: 133%;
   grid-area: button;
@@ -55,3 +56,10 @@
     @include fontBold(18px, 28px);
   }
 }
+
+@mixin screen1440px {
+  @media (max-width: 1440px){
+    @content;
+  }    
+}
+

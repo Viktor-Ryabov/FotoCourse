@@ -6,6 +6,15 @@
   display: grid;
   grid-template-areas: "title foto" "text foto" "button foto";
 }
+@media (max-width: 1440px) {
+  .fotoCourse {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+}
 .fotoCourse__title {
   margin: 50px 0 60px 48px;
   padding: 0;
@@ -15,6 +24,12 @@
   line-height: 110px;
   grid-area: title;
   color: #000000;
+}
+@media (max-width: 1440px) {
+  .fotoCourse__title {
+    max-width: 403px;
+    margin: 0 auto 60px 40px;
+  }
 }
 .fotoCourse__text {
   margin: 0 0 170px 54px;
@@ -26,6 +41,12 @@
   line-height: 118%;
   grid-area: text;
   max-width: 469px;
+}
+@media (max-width: 1440px) {
+  .fotoCourse__text {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+  }
 }
 .fotoCourse__button {
   margin: 0 0 50px 50px;
@@ -53,8 +74,25 @@
   border-radius: 24.5px;
   grid-area: button;
 }
+.fotoCourse__button:hover {
+  font-family: "Roboto_bold";
+  font-size: 18px;
+  line-height: 28px;
+}
+@media (max-width: 1440px) {
+  .fotoCourse__button {
+    max-width: 100%;
+    margin: 0 auto 40px 40px;
+  }
+}
 .fotoCourse__foto {
   margin: 50px 50px 50px 0;
   padding: 0;
   grid-area: foto;
+}
+@media (max-width: 1440px) {
+  .fotoCourse__foto {
+    max-width: 90%;
+    margin: 0 40px 60px 40px;
+  }
 }/*# sourceMappingURL=fotoCourse.css.map */

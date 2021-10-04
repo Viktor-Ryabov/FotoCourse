@@ -10,6 +10,14 @@
     "title foto"
     "text foto"
     "button foto";
+  @include screen1440px {
+    @include flex(
+      $direction: column,
+      $justify: flex-start,
+      $alignItems: center,
+      $alignContent: center
+    );
+  }
 
   &__title {
     @include MarginPadding($margin: 50px 0 60px 48px);
@@ -17,6 +25,10 @@
     line-height: 110px;
     grid-area: title;
     color: $blackColor;
+    @include screen1440px {
+      max-width: 403px;
+      margin: 0 auto 60px 40px;
+    }
   }
   &__text {
     @include MarginPadding($margin: 0 0 170px 54px);
@@ -25,6 +37,10 @@
     line-height: 118%;
     grid-area: text;
     max-width: 469px;
+    @include screen1440px {
+      max-width: 469px;
+      margin: 0 auto 60px 44px;
+    }
   }
   &__button {
     @include MarginPadding($margin: 0 0 50px 50px);
@@ -33,9 +49,17 @@
     @include flex($justify: center, $alignItems: center);
     @include buttonDesctopStyle;
     grid-area: button;
+    @include screen1440px {
+      max-width: 100%;
+      margin: 0 auto 40px 40px;
+    }
   }
   &__foto {
     @include MarginPadding($margin: 50px 50px 50px 0);
     grid-area: foto;
+    @include screen1440px {
+      max-width: 90%;
+      margin: 0 40px 60px 40px;
+    }
   }
 }
