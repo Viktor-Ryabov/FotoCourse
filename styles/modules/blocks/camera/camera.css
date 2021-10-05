@@ -61,6 +61,7 @@
 @media (max-width: 1440px) {
   .camera__text {
     margin: 40px auto 40px 44px;
+    margin-bottom: 180px;
   }
 }
 .camera__foto {
@@ -88,11 +89,27 @@
   max-width: 526px;
   grid-area: feedback1;
 }
+@media (max-width: 1440px) {
+  .camera__feedbackText_1 {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    max-width: 526px;
+    margin-left: 40px;
+  }
+}
 .camera__feedbackText_2 {
   margin: 0 auto 60px 0;
   padding: 0;
   max-width: 497px;
   grid-area: feedback2;
+}
+@media (max-width: 1440px) {
+  .camera__feedbackText_2 {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    max-width: 526px;
+    margin-left: 40px;
+  }
 }
 .camera__feedbackName {
   margin: 0 0 10px 50px;
@@ -105,9 +122,23 @@
 .camera__feedbackName_1 {
   grid-area: name1;
 }
+@media (max-width: 1440px) {
+  .camera__feedbackName_1 {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    margin-bottom: 10px;
+  }
+}
 .camera__feedbackName_2 {
   margin-left: 0;
   grid-area: name2;
+}
+@media (max-width: 1440px) {
+  .camera__feedbackName_2 {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    margin-bottom: 10px;
+  }
 }
 .camera__feedbackMail {
   margin: 0 0 50px 50px;
@@ -120,7 +151,25 @@
 .camera__feedbackMail_1 {
   grid-area: mail1;
 }
+@media (max-width: 1440px) {
+  .camera__feedbackMail_1 {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    max-width: none;
+    width: calc(100% - 80px);
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ffffff;
+  }
+}
 .camera__feedbackMail_2 {
   grid-area: mail2;
   margin-left: 0;
+}
+@media (max-width: 1440px) {
+  .camera__feedbackMail_2 {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=camera.css.map */

@@ -69,4 +69,12 @@
 }
 .header__logoButton:hover {
   cursor: pointer;
+}
+.header__buttonBurgerMenu {
+  display: none;
+}
+@media (max-width: 1440px) {
+  .header__buttonBurgerMenu {
+    display: block;
+  }
 }/*# sourceMappingURL=header.css.map */

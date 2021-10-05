@@ -13,6 +13,7 @@
     "foto button";
   @include screen1440px {
     @include tableSectionFlex;
+    padding: 0;
   }
 
   &__blockName {
@@ -52,6 +53,7 @@
     max-width: 380px;
     @include screen1440px {
       @include tableText;
+      max-width: 380px;
     }
   }
   &__button {

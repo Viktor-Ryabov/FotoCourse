@@ -35,6 +35,9 @@
     color: $whiteColor;
     @include screen1440px {
       @include tabletTitle;
+      font-size: 100px;
+      line-height: 100px;
+      max-width: 571px;
     }
   }
   &__inputs {
@@ -56,13 +59,10 @@
     outline: none;
     color: $blackColor;
     @include fontRegular(14px, 24px);
+    @include screen1440px {
+      margin: 0 0 80px 40px;
+    }
   }
-  // &__inputText{
-  //   @include MarginPadding($margin: 0 0 0 20px);
-  //   @include fontRegular(14px, 24px);
-  //   justify-self: flex-start;
-  //   align-self: center;
-  // }
   &__button {
     @include MarginPadding($margin: 0 auto 0 0);
     @include elementsNoStyles;
@@ -78,5 +78,9 @@
     @include MarginPadding($margin: 0 auto 50px 50px);
     @include fontRegular(15px, 24px);
     color: $whiteColor;
+    @include screen1440px {
+      margin: 0 0 40px 40px;
+      align-self: flex-start;
+    }
   }
 }

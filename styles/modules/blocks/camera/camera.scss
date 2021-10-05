@@ -46,6 +46,7 @@
     text-transform: uppercase;
     @include screen1440px {
       @include tabletBlockName;
+      margin-bottom: 180px;
     }
   }
   &__foto {
@@ -63,11 +64,21 @@
       @include MarginPadding($margin: 0 172px 60px 50px);
       max-width: 526px;
       grid-area: feedback1;
+      @include screen1440px {
+        @include tableText;
+        max-width: 526px;
+        margin-left: 40px;
+      }
     }
     &_2 {
       @include MarginPadding($margin: 0 auto 60px 0);
       max-width: 497px;
       grid-area: feedback2;
+      @include screen1440px {
+        @include tableText;
+        max-width: 526px;
+        margin-left: 40px;
+      }
     }
   }
   &__feedbackName {
@@ -76,10 +87,18 @@
     color: $whiteColor;
     &_1 {
       grid-area: name1;
+      @include screen1440px {
+        @include tableText;
+        margin-bottom: 10px;
+      }
     }
     &_2 {
       margin-left: 0;
       grid-area: name2;
+      @include screen1440px {
+        @include tableText;
+        margin-bottom: 10px;
+      }
     }
   }
   &__feedbackMail {
@@ -88,10 +107,22 @@
     color: $whiteColor;
     &_1 {
       grid-area: mail1;
+      @include screen1440px {
+        @include tableText;
+        max-width: none;
+        width: calc(100% - 80px);
+        padding-bottom: 60px;
+        border-bottom: 1px solid #ffffff;
+      }
     }
     &_2 {
       grid-area: mail2;
       margin-left: 0;
+      @include screen1440px {
+        @include tableText;
+        padding-bottom: 40px;
+        margin-bottom: 0;
+      }
     }
   }
 }

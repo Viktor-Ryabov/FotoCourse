@@ -14,6 +14,7 @@
     align-items: center;
     align-content: center;
     width: 100%;
+    padding: 0;
   }
 }
 .searchingOrders__blockName {
@@ -74,6 +75,7 @@
   .searchingOrders__text {
     max-width: 469px;
     margin: 0 auto 60px 44px;
+    max-width: 380px;
   }
 }
 .searchingOrders__button {

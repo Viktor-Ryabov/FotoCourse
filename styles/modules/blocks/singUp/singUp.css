@@ -58,6 +58,9 @@
   .singUp__h2 {
     max-width: 617px;
     margin: 40px auto 60px 40px;
+    font-size: 100px;
+    line-height: 100px;
+    max-width: 571px;
   }
 }
 .singUp__inputs {
@@ -87,6 +90,11 @@
   font-family: "Roboto_regular";
   font-size: 14px;
   line-height: 24px;
+}
+@media (max-width: 1440px) {
+  .singUp__input {
+    margin: 0 0 80px 40px;
+  }
 }
 .singUp__button {
   margin: 0 auto 0 0;
@@ -129,4 +137,10 @@
   font-size: 15px;
   line-height: 24px;
   color: #FFFFFF;
+}
+@media (max-width: 1440px) {
+  .singUp__since {
+    margin: 0 0 40px 40px;
+    align-self: flex-start;
+  }
 }/*# sourceMappingURL=singUp.css.map */

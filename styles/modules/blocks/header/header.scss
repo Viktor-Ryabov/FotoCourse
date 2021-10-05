@@ -45,4 +45,11 @@
       cursor: pointer;
     }
   }
+  &__buttonBurgerMenu{
+    display: none;
+    @include screen1440px{
+      display: block;
+    }
+
+  }
 }
