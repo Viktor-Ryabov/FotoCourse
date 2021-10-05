@@ -13,7 +13,7 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    max-width: 100%;
+    width: 100%;
   }
 }
 .studyComposition__blockName {
@@ -25,6 +25,11 @@
   grid-area: blockName;
   color: #000000;
   text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  .studyComposition__blockName {
+    margin: 40px auto 40px 44px;
+  }
 }
 .studyComposition__title {
   margin: 0 292px 100px 50px;
@@ -38,8 +43,8 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__title {
-    max-width: 624px;
-    margin: 40px auto 60px 38px;
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
   }
 }
 .studyComposition__text {
@@ -65,8 +70,8 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__text {
-    max-width: 400px;
-    margin: 0 auto 20px 44px;
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
   }
 }
 .studyComposition__text_2 {
@@ -81,7 +86,7 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__text_2 {
-    max-width: 400px;
+    max-width: 469px;
     margin: 0 auto 60px 44px;
   }
 }
@@ -119,7 +124,7 @@
 @media (max-width: 1440px) {
   .studyComposition__button {
     max-width: 100%;
-    margin: 0 auto 50px 40px;
+    margin: 0 auto 40px 40px;
   }
 }
 .studyComposition__foto {
@@ -129,7 +134,7 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__foto {
-    max-width: 90%;
+    width: calc(100% - 80px);
     margin: 0 40px 60px 40px;
   }
 }
@@ -145,7 +150,7 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__rules {
-    max-width: 100%;
+    width: 100%;
     margin: 0 40px 40px 40px;
     display: flex;
     flex-direction: column;
@@ -170,13 +175,13 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__compositionRule {
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: calc(100% - 80px);
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-bottom: #000000 solid 1px;
   }
   .studyComposition__compositionRule:last-of-type {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     border-bottom: none;
   }
 }/*# sourceMappingURL=studyComposition.css.map */

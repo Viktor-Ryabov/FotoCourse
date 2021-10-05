@@ -8,5 +8,6 @@
     background-color: #FFFFFF;
     @include screen1440px{
         max-width: 100%;
+        align-items: stretch;
     }
 }

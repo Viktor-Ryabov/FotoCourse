@@ -14,21 +14,17 @@
     "button foto"
     "rules rules";
   @include screen1440px {
-    @include flex(
-      $direction: column,
-      $justify: flex-start,
-      $alignItems: center,
-      $alignContent: center
-    );
-    max-width: 100%;
+    @include tableSectionFlex;
   }
-
   &__blockName {
     @include MarginPadding($margin: 50px 0 50px 54px);
     @include fontRegular(18px, 28px);
     grid-area: blockName;
     color: $blackColor;
     text-transform: uppercase;
+    @include screen1440px {
+      @include tabletBlockName;
+    }
   }
   &__title {
     @include MarginPadding($margin: 0 292px 100px 50px);
@@ -37,8 +33,7 @@
     grid-area: title;
     color: $blackColor;
     @include screen1440px {
-      max-width: 624px;
-      margin: 40px auto 60px 38px;
+      @include tabletTitle;
     }
   }
   &__text {
@@ -53,8 +48,7 @@
       color: $blackColor;
     }
     @include screen1440px {
-      max-width: 400px;
-      margin: 0 auto 20px 44px;
+      @include tableText;
     }
   }
   &__text_2 {
@@ -64,8 +58,7 @@
     grid-area: text_2;
     max-width: 400px;
     @include screen1440px {
-      max-width: 400px;
-      margin: 0 auto 60px 44px;
+      @include tableText;
     }
   }
   &__button {
@@ -76,27 +69,28 @@
     @include buttonDesctopStyle;
     grid-area: button;
     @include screen1440px {
-      max-width: 100%;
-      margin: 0 auto 50px 40px;
+      @include tabletButton;
     }
   }
   &__foto {
     @include MarginPadding($margin: 50px 50px 50px 0);
     grid-area: foto;
     @include screen1440px {
-      max-width: 90%;
-      margin: 0 40px 60px 40px;
+      @include tabletFoto;
     }
   }
-
   &__rules {
     @include MarginPadding($margin: 100px 54px 50px 54px);
     @include flex($direction: row, $justify: space-between, $alignItems: top);
     grid-area: rules;
     @include screen1440px {
-      max-width: 100%;
+      width: 100%;
       margin: 0 40px 40px 40px;
-      @include flex($direction: column, $justify: flex-start, $alignItems: center);
+      @include flex(
+        $direction: column,
+        $justify: flex-start,
+        $alignItems: center
+      );
     }
   }
   &__compositionRule {
@@ -106,12 +100,12 @@
     @include elementsNoStyles;
     cursor: none;
     @include screen1440px {
-      width: 100%;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      width: calc(100% - 80px);
+      padding-top: 30px;
+      padding-bottom: 30px;
       border-bottom: #000000 solid 1px;
-      &:last-of-type{
-        margin-bottom: 40px;
+      &:last-of-type {
+        padding-bottom: 40px;
         border-bottom: none;
       }
     }

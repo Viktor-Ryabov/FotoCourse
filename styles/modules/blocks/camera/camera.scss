@@ -13,6 +13,9 @@
     "feedback1 feedback2"
     "name1 name2"
     "mail1 mail2";
+  @include screen1440px {
+    @include tableSectionFlex;
+  }
 
   &__blockName {
     @include MarginPadding($margin: 50px 0 50px 54px);
@@ -20,6 +23,9 @@
     grid-area: blockName;
     color: $whiteColor;
     text-transform: uppercase;
+    @include screen1440px {
+      @include tabletBlockName;
+    }
   }
   &__title {
     @include MarginPadding($margin: 0 81px 359px 50px);
@@ -27,6 +33,9 @@
     max-width: 617px;
     grid-area: title;
     color: $whiteColor;
+    @include screen1440px {
+      @include tabletTitle;
+    }
   }
   &__text {
     @include MarginPadding($margin: 0 0 180px 54px);
@@ -35,10 +44,16 @@
     grid-area: link;
     max-width: 400px;
     text-transform: uppercase;
+    @include screen1440px {
+      @include tabletBlockName;
+    }
   }
   &__foto {
     @include MarginPadding($margin: 50px 50px 50px 0);
     grid-area: foto;
+    @include screen1440px {
+      @include tabletFoto;
+    }
   }
   &__feedbackText {
     @include MarginPadding($margin: 0 0 60px 50px);

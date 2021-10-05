@@ -13,6 +13,7 @@
 @media (max-width: 1440px) {
   .page {
     max-width: 100%;
+    align-items: stretch;
   }
 }
 
@@ -104,6 +105,7 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    width: 100%;
   }
 }
 .fotoCourse__title {
@@ -118,8 +120,8 @@
 }
 @media (max-width: 1440px) {
   .fotoCourse__title {
-    max-width: 403px;
-    margin: 0 auto 60px 40px;
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
   }
 }
 .fotoCourse__text {
@@ -183,7 +185,7 @@
 }
 @media (max-width: 1440px) {
   .fotoCourse__foto {
-    max-width: 90%;
+    width: calc(100% - 80px);
     margin: 0 40px 60px 40px;
   }
 }
@@ -203,7 +205,7 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    max-width: 100%;
+    width: 100%;
   }
 }
 .studyComposition__blockName {
@@ -215,6 +217,11 @@
   grid-area: blockName;
   color: #000000;
   text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  .studyComposition__blockName {
+    margin: 40px auto 40px 44px;
+  }
 }
 .studyComposition__title {
   margin: 0 292px 100px 50px;
@@ -228,8 +235,8 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__title {
-    max-width: 624px;
-    margin: 40px auto 60px 38px;
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
   }
 }
 .studyComposition__text {
@@ -255,8 +262,8 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__text {
-    max-width: 400px;
-    margin: 0 auto 20px 44px;
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
   }
 }
 .studyComposition__text_2 {
@@ -271,7 +278,7 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__text_2 {
-    max-width: 400px;
+    max-width: 469px;
     margin: 0 auto 60px 44px;
   }
 }
@@ -309,7 +316,7 @@
 @media (max-width: 1440px) {
   .studyComposition__button {
     max-width: 100%;
-    margin: 0 auto 50px 40px;
+    margin: 0 auto 40px 40px;
   }
 }
 .studyComposition__foto {
@@ -319,7 +326,7 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__foto {
-    max-width: 90%;
+    width: calc(100% - 80px);
     margin: 0 40px 60px 40px;
   }
 }
@@ -335,7 +342,7 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__rules {
-    max-width: 100%;
+    width: 100%;
     margin: 0 40px 40px 40px;
     display: flex;
     flex-direction: column;
@@ -360,13 +367,13 @@
 }
 @media (max-width: 1440px) {
   .studyComposition__compositionRule {
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: calc(100% - 80px);
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-bottom: #000000 solid 1px;
   }
   .studyComposition__compositionRule:last-of-type {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     border-bottom: none;
   }
 }
@@ -379,6 +386,16 @@
   display: grid;
   grid-template-areas: "blockName foto" "title foto" "link foto" "feedback1 feedback2" "name1 name2" "mail1 mail2";
 }
+@media (max-width: 1440px) {
+  .camera {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+}
 .camera__blockName {
   margin: 50px 0 50px 54px;
   padding: 0;
@@ -389,6 +406,11 @@
   color: #FFFFFF;
   text-transform: uppercase;
 }
+@media (max-width: 1440px) {
+  .camera__blockName {
+    margin: 40px auto 40px 44px;
+  }
+}
 .camera__title {
   margin: 0 81px 359px 50px;
   padding: 0;
@@ -398,6 +420,12 @@
   max-width: 617px;
   grid-area: title;
   color: #FFFFFF;
+}
+@media (max-width: 1440px) {
+  .camera__title {
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
+  }
 }
 .camera__text {
   margin: 0 0 180px 54px;
@@ -410,10 +438,21 @@
   max-width: 400px;
   text-transform: uppercase;
 }
+@media (max-width: 1440px) {
+  .camera__text {
+    margin: 40px auto 40px 44px;
+  }
+}
 .camera__foto {
   margin: 50px 50px 50px 0;
   padding: 0;
   grid-area: foto;
+}
+@media (max-width: 1440px) {
+  .camera__foto {
+    width: calc(100% - 80px);
+    margin: 0 40px 60px 40px;
+  }
 }
 .camera__feedbackText {
   margin: 0 0 60px 50px;
@@ -474,6 +513,16 @@
   display: grid;
   grid-template-areas: "blockName text1" "title text1" "foto text1" "foto button";
 }
+@media (max-width: 1440px) {
+  .searchingOrders {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+}
 .searchingOrders__blockName {
   margin: 50px 0 50px 54px;
   padding: 0;
@@ -483,6 +532,11 @@
   grid-area: blockName;
   color: #000000;
   text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  .searchingOrders__blockName {
+    margin: 40px auto 40px 44px;
+  }
 }
 .searchingOrders__title {
   margin: 0 292px 106px 50px;
@@ -494,10 +548,22 @@
   grid-area: title;
   color: #000000;
 }
+@media (max-width: 1440px) {
+  .searchingOrders__title {
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
+  }
+}
 .searchingOrders__foto {
   margin: 0 auto 0 50px;
   padding: 0;
   grid-area: foto;
+}
+@media (max-width: 1440px) {
+  .searchingOrders__foto {
+    width: calc(100% - 80px);
+    margin: 0 40px 60px 40px;
+  }
 }
 .searchingOrders__text {
   margin: 386px 50px 148px 0;
@@ -509,7 +575,13 @@
   align-self: flex-end;
   justify-self: flex-end;
   grid-area: text1;
-  width: 380px;
+  max-width: 380px;
+}
+@media (max-width: 1440px) {
+  .searchingOrders__text {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+  }
 }
 .searchingOrders__button {
   margin: 0 202px 0 0;
@@ -543,12 +615,28 @@
   font-size: 18px;
   line-height: 28px;
 }
+@media (max-width: 1440px) {
+  .searchingOrders__button {
+    max-width: 100%;
+    margin: 0 auto 40px 40px;
+  }
+}
 
 .singUp {
   margin: 0;
   padding: 0;
   width: 100%;
   background-color: #DF2626;
+}
+@media (max-width: 1440px) {
+  .singUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
 }
 .singUp__callToAction {
   margin: 0;
@@ -560,11 +648,26 @@
   align-content: center;
   width: 100%;
 }
+@media (max-width: 1440px) {
+  .singUp__callToAction {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+}
 .singUp__arrow {
   margin: 60px 50px 0 50px;
   padding: 0;
   width: 129px;
   height: 95px;
+}
+@media (max-width: 1440px) {
+  .singUp__arrow {
+    display: none;
+  }
 }
 .singUp__h2 {
   margin: 50px 0 120px 0;
@@ -574,6 +677,12 @@
   line-height: 120px;
   max-width: 685px;
   color: #FFFFFF;
+}
+@media (max-width: 1440px) {
+  .singUp__h2 {
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
+  }
 }
 .singUp__inputs {
   margin: 0;

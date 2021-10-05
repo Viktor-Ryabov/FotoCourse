@@ -6,6 +6,16 @@
   display: grid;
   grid-template-areas: "blockName foto" "title foto" "link foto" "feedback1 feedback2" "name1 name2" "mail1 mail2";
 }
+@media (max-width: 1440px) {
+  .camera {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+}
 .camera__blockName {
   margin: 50px 0 50px 54px;
   padding: 0;
@@ -16,6 +26,11 @@
   color: #FFFFFF;
   text-transform: uppercase;
 }
+@media (max-width: 1440px) {
+  .camera__blockName {
+    margin: 40px auto 40px 44px;
+  }
+}
 .camera__title {
   margin: 0 81px 359px 50px;
   padding: 0;
@@ -25,6 +40,12 @@
   max-width: 617px;
   grid-area: title;
   color: #FFFFFF;
+}
+@media (max-width: 1440px) {
+  .camera__title {
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
+  }
 }
 .camera__text {
   margin: 0 0 180px 54px;
@@ -37,10 +58,21 @@
   max-width: 400px;
   text-transform: uppercase;
 }
+@media (max-width: 1440px) {
+  .camera__text {
+    margin: 40px auto 40px 44px;
+  }
+}
 .camera__foto {
   margin: 50px 50px 50px 0;
   padding: 0;
   grid-area: foto;
+}
+@media (max-width: 1440px) {
+  .camera__foto {
+    width: calc(100% - 80px);
+    margin: 0 40px 60px 40px;
+  }
 }
 .camera__feedbackText {
   margin: 0 0 60px 50px;

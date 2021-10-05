@@ -11,12 +11,7 @@
     "text foto"
     "button foto";
   @include screen1440px {
-    @include flex(
-      $direction: column,
-      $justify: flex-start,
-      $alignItems: center,
-      $alignContent: center
-    );
+    @include tableSectionFlex;
   }
 
   &__title {
@@ -25,11 +20,12 @@
     line-height: 110px;
     grid-area: title;
     color: $blackColor;
+
     @include screen1440px {
-      max-width: 403px;
-      margin: 0 auto 60px 40px;
+      @include tabletTitle;
     }
   }
+
   &__text {
     @include MarginPadding($margin: 0 0 170px 54px);
     @include fontRegular(20px);
@@ -38,8 +34,7 @@
     grid-area: text;
     max-width: 469px;
     @include screen1440px {
-      max-width: 469px;
-      margin: 0 auto 60px 44px;
+      @include tableText;
     }
   }
   &__button {
@@ -50,16 +45,14 @@
     @include buttonDesctopStyle;
     grid-area: button;
     @include screen1440px {
-      max-width: 100%;
-      margin: 0 auto 40px 40px;
+      @include tabletButton;
     }
   }
   &__foto {
     @include MarginPadding($margin: 50px 50px 50px 0);
     grid-area: foto;
     @include screen1440px {
-      max-width: 90%;
-      margin: 0 40px 60px 40px;
+      @include tabletFoto;
     }
   }
 }

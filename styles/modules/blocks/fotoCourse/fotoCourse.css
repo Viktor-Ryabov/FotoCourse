@@ -13,6 +13,7 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    width: 100%;
   }
 }
 .fotoCourse__title {
@@ -27,8 +28,8 @@
 }
 @media (max-width: 1440px) {
   .fotoCourse__title {
-    max-width: 403px;
-    margin: 0 auto 60px 40px;
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
   }
 }
 .fotoCourse__text {
@@ -92,7 +93,7 @@
 }
 @media (max-width: 1440px) {
   .fotoCourse__foto {
-    max-width: 90%;
+    width: calc(100% - 80px);
     margin: 0 40px 60px 40px;
   }
 }/*# sourceMappingURL=fotoCourse.css.map */

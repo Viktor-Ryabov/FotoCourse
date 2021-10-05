@@ -6,6 +6,16 @@
   display: grid;
   grid-template-areas: "blockName text1" "title text1" "foto text1" "foto button";
 }
+@media (max-width: 1440px) {
+  .searchingOrders {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+}
 .searchingOrders__blockName {
   margin: 50px 0 50px 54px;
   padding: 0;
@@ -15,6 +25,11 @@
   grid-area: blockName;
   color: #000000;
   text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  .searchingOrders__blockName {
+    margin: 40px auto 40px 44px;
+  }
 }
 .searchingOrders__title {
   margin: 0 292px 106px 50px;
@@ -26,10 +41,22 @@
   grid-area: title;
   color: #000000;
 }
+@media (max-width: 1440px) {
+  .searchingOrders__title {
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
+  }
+}
 .searchingOrders__foto {
   margin: 0 auto 0 50px;
   padding: 0;
   grid-area: foto;
+}
+@media (max-width: 1440px) {
+  .searchingOrders__foto {
+    width: calc(100% - 80px);
+    margin: 0 40px 60px 40px;
+  }
 }
 .searchingOrders__text {
   margin: 386px 50px 148px 0;
@@ -41,7 +68,13 @@
   align-self: flex-end;
   justify-self: flex-end;
   grid-area: text1;
-  width: 380px;
+  max-width: 380px;
+}
+@media (max-width: 1440px) {
+  .searchingOrders__text {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+  }
 }
 .searchingOrders__button {
   margin: 0 202px 0 0;
@@ -74,4 +107,10 @@
   font-family: "Roboto_bold";
   font-size: 18px;
   line-height: 28px;
+}
+@media (max-width: 1440px) {
+  .searchingOrders__button {
+    max-width: 100%;
+    margin: 0 auto 40px 40px;
+  }
 }/*# sourceMappingURL=searchingOrders.css.map */

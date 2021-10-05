@@ -1,7 +1,12 @@
 @import "../variables/variables.scss";
 
 //---DISPLAY---
-@mixin flex($direction: column, $justify: center, $alignItems: center, $alignContent: center) {
+@mixin flex(
+  $direction: column,
+  $justify: center,
+  $alignItems: center,
+  $alignContent: center
+) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
@@ -17,7 +22,7 @@
 }
 
 //---MARGIN-PADDING---
-@mixin MarginPadding ($margin: 0, $padding: 0) {
+@mixin MarginPadding($margin: 0, $padding: 0) {
   margin: $margin;
   padding: $padding;
 }
@@ -43,7 +48,7 @@
 }
 
 //---BUTTON---
-@mixin buttonDesctopStyle{
+@mixin buttonDesctopStyle {
   line-height: 133%;
   grid-area: button;
   color: $blackColor;
@@ -52,14 +57,44 @@
   height: 49px;
   border: 1px solid $blackColor;
   border-radius: 24.5px;
-  &:hover{
+  &:hover {
     @include fontBold(18px, 28px);
   }
 }
 
+//---TABLET STYLES---
 @mixin screen1440px {
-  @media (max-width: 1440px){
+  @media (max-width: 1440px) {
     @content;
-  }    
+  }
 }
 
+@mixin tabletFoto {
+  width: calc(100% - 80px);
+  margin: 0 40px 60px 40px;
+}
+@mixin tabletTitle {
+  max-width: 617px;
+  margin: 40px auto 60px 40px;
+}
+@mixin tabletBlockName {
+  margin: 40px auto 40px 44px;
+}
+@mixin tabletButton {
+  max-width: 100%;
+  margin: 0 auto 40px 40px;
+}
+@mixin tableText {
+  max-width: 469px;
+  margin: 0 auto 60px 44px;
+}
+
+@mixin tableSectionFlex {
+  @include flex(
+    $direction: column,
+    $justify: flex-start,
+    $alignItems: center,
+    $alignContent: center
+  );
+  width: 100%;
+}
