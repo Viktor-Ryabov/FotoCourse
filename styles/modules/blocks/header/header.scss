@@ -7,11 +7,18 @@
   width: 100%;
   background-color: $redColor;
   min-height: 84px;
+  position: sticky;
+  top: 0;
   &__list {
     @include elementsNoStyles;
     @include flex($direction: row);
+    @include screen1440px {
+      display: none;
+      @include MarginPadding($margin: 0 auto 0 40px);
+    }
+
   }
-  &__links{
+  &__links {
     @include elementsNoStyles;
     margin-right: 40px;
     color: $whiteColor;
@@ -27,7 +34,10 @@
       margin-right: 50px;
     }
   }
-
+  &__logoButtonLink{
+    @include elementsNoStyles;
+    @include MarginPadding
+  }
   &__logoButton {
     @include MarginPadding($margin: 0 0 0 50px);
     width: 40px;
@@ -45,11 +55,28 @@
       cursor: pointer;
     }
   }
-  &__buttonBurgerMenu{
+  &__buttonBurgerMenu {
     display: none;
-    @include screen1440px{
+    width: 32px;
+    height: 20px;
+    @include MarginPadding($margin: 0 40px 0 0);
+    &:hover {
+      cursor: pointer;
+      opacity: 70%;
+    }
+    @include screen1440px {
       display: block;
     }
 
+  }
+  &__closeIcon {
+    @include MarginPadding($margin: 0 34.41px 0 0);
+    display: none;
+    width: 32px;
+    height: 32px;
+    &:hover {
+      cursor: pointer;
+      opacity: 70%;
+    }
   }
 }

@@ -1,0 +1,4 @@
+.effects_visible{
+    display: flex !important;
+    z-index: 10;
+}

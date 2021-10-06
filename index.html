@@ -9,12 +9,19 @@
   </head>
   <body class="page">
     <header class="header">
+      <a href="#fotoCourse" class="header__logoButtonLink">
+        <img
+          src="./images/header__logoArrow.svg"
+          alt="логотип"
+          class="header__logoButton"
+        />
+      </a>
       <img
-        src="./images/header__logoArrow.svg"
-        alt="логотип"
-        class="header__logoButton"
+        id="burgerMenuButton"
+        src="./images/buttonBurgerMenu.svg"
+        alt="button"
+        class="header__buttonBurgerMenu"
       />
-      <img src="./images/buttonBurgerMenu.svg" alt="button" class="header__buttonBurgerMenu">
       <ul class="header__list">
         <li class="header__link">
           <a class="header__links" href="#studyComposition">Композиция</a>
@@ -26,6 +33,12 @@
           <a class="header__links" href="#searchingOrders">Поиск заказов</a>
         </li>
       </ul>
+      <img
+        id="colseIconHeader"
+        src="./images/closeIcon.svg"
+        alt="Закрыть"
+        class="header__closeIcon"
+      />
     </header>
 
     <main>
@@ -131,8 +144,8 @@
       </div>
       <div class="singUp__inputs">
         <input
-          name=""
-          id=""
+          name="singUpInput"
+          id="singUpInput"
           value="Ваша почта"
           type="text"
           class="singUp__input"

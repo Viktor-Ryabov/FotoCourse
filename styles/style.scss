@@ -1,4 +1,6 @@
 @import "../fonts/font.css";
+@import "../styles/modules/blocks/effects/effects_visible.css";
+@import "../styles/modules/blocks/effects/effects_notVisible.css";
 @import "../styles/modules/variables/variables.scss";
 @import "../styles/modules/mixins/mixins.scss";
 @import "../styles/modules/blocks/page/page.scss";
@@ -8,5 +10,4 @@
 @import "../styles/modules/blocks/camera/camera.scss";
 @import "../styles/modules/blocks/searchingOrders/searchingOrders.scss";
 @import "../styles/modules/blocks/singUp/singUp.scss";
-// @import "";
-// @import "";
+

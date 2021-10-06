@@ -98,3 +98,10 @@
   );
   width: 100%;
 }
+
+@mixin blockNotVisible{
+  display: none;
+}
+@mixin blockVisible{
+  display: block;
+}
