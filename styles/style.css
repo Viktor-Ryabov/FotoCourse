@@ -489,6 +489,7 @@
   .camera__text {
     margin: 40px auto 40px 44px;
     margin-bottom: 180px;
+    margin-top: 0;
   }
 }
 .camera__foto {
