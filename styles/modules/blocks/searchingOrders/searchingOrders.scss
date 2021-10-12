@@ -11,20 +11,12 @@
     "title text1"
     "foto text1"
     "foto button";
-  @include screen1440px {
-    @include tableSectionFlex;
-    padding: 0;
-  }
-
   &__blockName {
     @include MarginPadding($margin: 50px 0 50px 54px);
     @include fontRegular(18px, 28px);
     grid-area: blockName;
     color: $blackColor;
     text-transform: uppercase;
-    @include screen1440px {
-      @include tabletBlockName;
-    }
   }
   &__title {
     @include MarginPadding($margin: 0 292px 106px 50px);
@@ -32,16 +24,10 @@
     max-width: 549px;
     grid-area: title;
     color: $blackColor;
-    @include screen1440px {
-      @include tabletTitle;
-    }
   }
   &__foto {
     @include MarginPadding($margin: 0 auto 0 50px);
     grid-area: foto;
-    @include screen1440px {
-      @include tabletFoto;
-    }
   }
   &__text {
     @include MarginPadding($margin: 386px 50px 148px 0);
@@ -51,10 +37,6 @@
     justify-self: flex-end;
     grid-area: text1;
     max-width: 380px;
-    @include screen1440px {
-      @include tableText;
-      max-width: 380px;
-    }
   }
   &__button {
     @include MarginPadding($margin: 0 202px 0 0);
@@ -64,8 +46,50 @@
     @include buttonDesctopStyle;
     grid-area: button;
     justify-self: flex-end;
-    @include screen1440px {
+  }
+}
+
+@media (max-width: 1440px) {
+  .searchingOrders {
+    @include tableSectionFlex;
+    &__blockName {
+      @include tabletBlockName;
+    }
+    &__title {
+      @include tabletTitle;
+    }
+    &__text {
+      @include tableText;
+    }
+    &__button {
       @include tabletButton;
+    }
+    &__foto {
+      @include tabletFoto;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .searchingOrders {
+    padding-top: 40px;
+    max-width: 100%;
+    &__blockName {
+      @include phoneBlockName;
+      border-top: black solid 1px;
+    }
+    &__title {
+      @include phoneTitile;
+      @include fontRegular($fontSize: 32px, $lineHeigth: 38px);
+    }
+    &__text {
+      @include phoneText;
+    }
+    &__button {
+      @include phoneButton;
+    }
+    &__foto {
+      @include phoneFoto;
     }
   }
 }

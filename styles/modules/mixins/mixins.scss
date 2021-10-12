@@ -68,7 +68,6 @@
     @content;
   }
 }
-
 @mixin tabletFoto {
   width: calc(100% - 80px);
   margin: 0 40px 60px 40px;
@@ -83,6 +82,7 @@
 @mixin tabletButton {
   max-width: 100%;
   margin: 0 auto 40px 40px;
+  justify-self: flex-start;
 }
 @mixin tableText {
   max-width: 469px;
@@ -99,9 +99,44 @@
   width: 100%;
 }
 
-@mixin blockNotVisible{
+//---MOBILE STYLES---
+@mixin screen700px {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+@mixin phoneBlockName{
+  width: calc(100% - 40px);
+  border-top: 1px solid #000000;
+  font-size: 14px;
+  line-height: 20px;
+  @include MarginPadding($margin: 0 20px 30px 20px, $padding: 20px 0 0 0);
+}
+@mixin phoneTitile {
+  max-width: 282px;
+  margin: 14px auto 60px 20px;
+}
+@mixin phoneFoto {
+  width: calc(100% - 40px);
+  margin: 0 20px 60px 20px;
+}
+@mixin phoneText {
+  margin: 0 20px 30px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  width: calc(100% - 40px);
+  max-width: none;
+}
+@mixin phoneButton {
+  max-width: 100%;
+  margin: 0 auto 80px 20px;
+}
+
+//---ВИДИМОСТЬ---
+@mixin blockNotVisible {
   display: none;
 }
-@mixin blockVisible{
+@mixin blockVisible {
   display: block;
 }

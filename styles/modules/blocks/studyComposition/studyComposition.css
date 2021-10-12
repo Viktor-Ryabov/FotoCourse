@@ -6,14 +6,9 @@
   display: grid;
   grid-template-areas: "blockName foto" "title foto" "text_1 foto" "text_2 foto" "button foto" "rules rules";
 }
-@media (max-width: 1440px) {
+@media (max-width: 700px) {
   .studyComposition {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    width: 100%;
+    padding-top: 40px;
   }
 }
 .studyComposition__blockName {
@@ -26,11 +21,6 @@
   color: #000000;
   text-transform: uppercase;
 }
-@media (max-width: 1440px) {
-  .studyComposition__blockName {
-    margin: 40px auto 40px 44px;
-  }
-}
 .studyComposition__title {
   margin: 0 292px 100px 50px;
   padding: 0;
@@ -41,10 +31,12 @@
   grid-area: title;
   color: #000000;
 }
-@media (max-width: 1440px) {
+@media (max-width: 700px) {
   .studyComposition__title {
-    max-width: 617px;
-    margin: 40px auto 60px 40px;
+    max-width: 282px;
+    margin: 14px auto 60px 20px;
+    font-size: 30px;
+    line-height: 38px;
   }
 }
 .studyComposition__text {
@@ -68,7 +60,7 @@
   cursor: pointer;
   color: #000000;
 }
-@media (max-width: 1440px) {
+@media (max-width: 700px) {
   .studyComposition__text {
     max-width: 469px;
     margin: 0 auto 60px 44px;
@@ -83,12 +75,6 @@
   color: #000000;
   grid-area: text_2;
   max-width: 400px;
-}
-@media (max-width: 1440px) {
-  .studyComposition__text_2 {
-    max-width: 469px;
-    margin: 0 auto 60px 44px;
-  }
 }
 .studyComposition__button {
   margin: 0 0 0 50px;
@@ -121,22 +107,10 @@
   font-size: 18px;
   line-height: 28px;
 }
-@media (max-width: 1440px) {
-  .studyComposition__button {
-    max-width: 100%;
-    margin: 0 auto 40px 40px;
-  }
-}
 .studyComposition__foto {
   margin: 50px 50px 50px 0;
   padding: 0;
   grid-area: foto;
-}
-@media (max-width: 1440px) {
-  .studyComposition__foto {
-    width: calc(100% - 80px);
-    margin: 0 40px 60px 40px;
-  }
 }
 .studyComposition__rules {
   margin: 100px 54px 50px 54px;
@@ -147,17 +121,6 @@
   align-items: top;
   align-content: center;
   grid-area: rules;
-}
-@media (max-width: 1440px) {
-  .studyComposition__rules {
-    width: 100%;
-    margin: 0 40px 40px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-  }
 }
 .studyComposition__compositionRule {
   margin: 0;
@@ -173,7 +136,51 @@
   cursor: pointer;
   cursor: none;
 }
+
 @media (max-width: 1440px) {
+  .studyComposition {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+  .studyComposition__blockName {
+    margin: 40px auto 40px 44px;
+    max-width: calc(100% - 40px);
+    border-top: 1px solid #000000;
+    padding-top: 20px;
+  }
+  .studyComposition__title {
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
+  }
+  .studyComposition__text {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+  }
+  .studyComposition__text_2 {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+  }
+  .studyComposition__button {
+    max-width: 100%;
+    margin: 0 auto 40px 40px;
+  }
+  .studyComposition__foto {
+    width: calc(100% - 80px);
+    margin: 0 40px 60px 40px;
+  }
+  .studyComposition__rules {
+    width: 100%;
+    margin: 0 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
   .studyComposition__compositionRule {
     width: calc(100% - 80px);
     padding-top: 30px;

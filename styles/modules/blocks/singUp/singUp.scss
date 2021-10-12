@@ -24,21 +24,12 @@
     @include MarginPadding($margin: 60px 50px 0 50px);
     width: 129px;
     height: 95px;
-    @include screen1440px {
-      display: none;
-    }
   }
   &__h2 {
     @include MarginPadding($margin: 50px 0 120px 0);
     @include fontRegular(120px, 120px);
     max-width: 685px;
     color: $whiteColor;
-    @include screen1440px {
-      @include tabletTitle;
-      font-size: 100px;
-      line-height: 100px;
-      max-width: 571px;
-    }
   }
   &__inputs {
     @include MarginPadding;
@@ -59,9 +50,6 @@
     outline: none;
     color: $blackColor;
     @include fontRegular(14px, 24px);
-    @include screen1440px {
-      margin: 0 0 80px 40px;
-    }
   }
   &__button {
     @include MarginPadding($margin: 0 auto 0 0);
@@ -73,14 +61,76 @@
     border-radius: 0 8px 8px 0;
     border-left: none;
     height: 50px;
+    &:hover {
+      @include fontBold(14px, 24px);
+    }
   }
   &__since {
     @include MarginPadding($margin: 0 auto 50px 50px);
     @include fontRegular(15px, 24px);
     color: $whiteColor;
-    @include screen1440px {
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .singUp {
+    @include tableSectionFlex;
+    &__h2 {
+      @include tabletTitle;
+      font-size: 100px;
+      line-height: 100px;
+      max-width: 571px;
+    }
+    &__since {
       margin: 0 0 40px 40px;
       align-self: flex-start;
+    }
+    &__button {
+      @include tabletButton;
+      margin-left: 0;
+    }
+    &__arrow {
+      display: none;
+    }
+    &__inputs{
+    }
+    &__input{
+      margin: 0 0 80px 40px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .singUp {
+    padding-top: 40px;
+    max-width: 100%;
+    &__h2 {
+      border-top: white solid 1px;
+      @include fontRegular($fontSize: 48px, $lineHeigth: 50px);
+      @include MarginPadding($margin: 0 20px 270px 20px, $padding: 20px 0 0 0);
+    }
+    &__since {
+      @include phoneText;
+    }
+    &__inputs {
+      @include MarginPadding;
+      @include flex($direction: row, $alignItems: flex-start);
+      width: 100%;
+    }
+    &__input {
+      @include MarginPadding($margin: 0 0 40px 20px, $padding: 0 0 0 20px);
+      min-width: 175px;
+      height: 46px;
+      @include fontRegular(11px, 24px);
+    }
+    &__button {
+      @include MarginPadding($margin: 0 20px 40px 0);
+      @include fontRegular(11px, 24px);
+      height: 50px;
+      &:hover {
+        @include fontBold(11px, 24px);
+      }
     }
   }
 }

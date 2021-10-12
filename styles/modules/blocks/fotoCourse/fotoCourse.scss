@@ -10,20 +10,12 @@
     "title foto"
     "text foto"
     "button foto";
-  @include screen1440px {
-    @include tableSectionFlex;
-  }
-
   &__title {
     @include MarginPadding($margin: 50px 0 60px 48px);
     @include fontRegular(100px);
     line-height: 110px;
     grid-area: title;
     color: $blackColor;
-
-    @include screen1440px {
-      @include tabletTitle;
-    }
   }
 
   &__text {
@@ -33,9 +25,6 @@
     line-height: 118%;
     grid-area: text;
     max-width: 469px;
-    @include screen1440px {
-      @include tableText;
-    }
   }
   &__button {
     @include MarginPadding($margin: 0 0 50px 50px);
@@ -44,15 +33,47 @@
     @include flex($justify: center, $alignItems: center);
     @include buttonDesctopStyle;
     grid-area: button;
-    @include screen1440px {
-      @include tabletButton;
-    }
   }
   &__foto {
     @include MarginPadding($margin: 50px 50px 50px 0);
     grid-area: foto;
-    @include screen1440px {
+  }
+}
+
+@media (max-width: 1440px){
+  .fotoCourse {
+    @include tableSectionFlex;
+    &__title {
+      @include tabletTitle;
+    }
+    &__text {
+      @include tableText;
+    }
+    &__button{
+      @include tabletButton;
+    }
+    &__foto{
       @include tabletFoto;
+    }
+  }
+}
+
+@media (max-width: 700px){
+  .fotoCourse {
+    &__title {
+      @include phoneTitile;
+      font-size: 47px;
+      line-height: 56px;
+    }
+    &__text {
+      @include phoneText;
+    }
+    &__button{
+      @include phoneButton;
+      margin-bottom: 20px;
+    }
+    &__foto{
+      @include phoneFoto;
     }
   }
 }

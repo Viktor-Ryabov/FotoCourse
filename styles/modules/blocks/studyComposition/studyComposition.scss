@@ -13,18 +13,12 @@
     "text_2 foto"
     "button foto"
     "rules rules";
-  @include screen1440px {
-    @include tableSectionFlex;
-  }
   &__blockName {
     @include MarginPadding($margin: 50px 0 50px 54px);
     @include fontRegular(18px, 28px);
     grid-area: blockName;
     color: $blackColor;
     text-transform: uppercase;
-    @include screen1440px {
-      @include tabletBlockName;
-    }
   }
   &__title {
     @include MarginPadding($margin: 0 292px 100px 50px);
@@ -32,9 +26,6 @@
     max-width: 400px;
     grid-area: title;
     color: $blackColor;
-    @include screen1440px {
-      @include tabletTitle;
-    }
   }
   &__text {
     @include MarginPadding($margin: 0 0 20px 54px);
@@ -47,9 +38,6 @@
       @include elementsNoStyles;
       color: $blackColor;
     }
-    @include screen1440px {
-      @include tableText;
-    }
   }
   &__text_2 {
     @include MarginPadding($margin: 0 0 198px 54px);
@@ -57,9 +45,6 @@
     color: $blackColor;
     grid-area: text_2;
     max-width: 400px;
-    @include screen1440px {
-      @include tableText;
-    }
   }
   &__button {
     @include MarginPadding($margin: 0 0 0 50px);
@@ -68,22 +53,47 @@
     @include flex($justify: center, $alignItems: center);
     @include buttonDesctopStyle;
     grid-area: button;
-    @include screen1440px {
-      @include tabletButton;
-    }
   }
   &__foto {
-    @include MarginPadding($margin: 50px 50px 50px 0);
+    @include MarginPadding($margin: 50px 50px 0 0);
     grid-area: foto;
-    @include screen1440px {
-      @include tabletFoto;
-    }
   }
   &__rules {
     @include MarginPadding($margin: 100px 54px 50px 54px);
     @include flex($direction: row, $justify: space-between, $alignItems: top);
     grid-area: rules;
-    @include screen1440px {
+  }
+  &__compositionRule {
+    @include MarginPadding;
+    width: 291px;
+    @include fontRegular(18px, 28px);
+    @include elementsNoStyles;
+    cursor: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .studyComposition {
+    @include tableSectionFlex;
+    &__blockName {
+      @include tabletBlockName;
+    }
+    &__title {
+      @include tabletTitle;
+    }
+    &__text {
+      @include tableText;
+    }
+    &__text_2 {
+      @include tableText;
+    }
+    &__button {
+      @include tabletButton;
+    }
+    &__foto {
+      @include tabletFoto;
+    }
+    &__rules {
       width: 100%;
       margin: 0 40px 40px 40px;
       @include flex(
@@ -92,14 +102,7 @@
         $alignItems: center
       );
     }
-  }
-  &__compositionRule {
-    @include MarginPadding;
-    width: 291px;
-    @include fontRegular(18px, 28px);
-    @include elementsNoStyles;
-    cursor: none;
-    @include screen1440px {
+    &__compositionRule {
       width: calc(100% - 80px);
       padding-top: 30px;
       padding-bottom: 30px;
@@ -107,6 +110,59 @@
       &:last-of-type {
         padding-bottom: 40px;
         border-bottom: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .studyComposition {
+    max-width: 100%;
+    &__blockName {
+      @include phoneBlockName;
+      margin-top: 40px;
+    }
+    &__title {
+      @include phoneTitile;
+      @include fontRegular(30px, 38px);
+
+    }
+    &__text {
+      @include phoneText;
+      &_link {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    &__text_2 {
+      @include phoneText;
+    }
+    &__button {
+      @include phoneButton;
+    }
+    &__foto {
+      @include phoneFoto;
+    }
+    &__rules {
+      width: 100%;
+      @include MarginPadding;
+      @include flex(
+        $direction: column,
+        $justify: space-between,
+        $alignItems: center
+      );
+    }
+    &__compositionRule {
+      @include phoneText;
+      @include MarginPadding($margin: 14px 20px 0 20px, $padding: 0 0 14px 0);
+      width: calc(100% - 40px);
+      border-bottom: #000000 solid 1px;
+      &:last-of-type {
+        padding-bottom: 20px;
+        border-bottom: none;
+      }
+      &:first-of-type {
+        padding-top: 0;
       }
     }
   }
