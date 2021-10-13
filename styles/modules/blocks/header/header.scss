@@ -1,0 +1,82 @@
+@import "../../variables/variables.scss";
+@import "../../mixins/mixins.scss";
+
+.header {
+  @include MarginPadding;
+  @include flex($direction: row, $justify: space-between);
+  width: 100%;
+  background-color: $redColor;
+  min-height: 84px;
+  position: sticky;
+  top: 0;
+  &__list {
+    @include elementsNoStyles;
+    @include flex($direction: row);
+    @include screen1440px {
+      display: none;
+      @include MarginPadding($margin: 0 auto 0 40px);
+    }
+
+  }
+  &__links {
+    @include elementsNoStyles;
+    margin-right: 40px;
+    color: $whiteColor;
+  }
+
+  &__link {
+    @include fontRegular(16px);
+    &:hover {
+      @include fontBold(16px);
+    }
+
+    &:last-of-type {
+      margin-right: 50px;
+    }
+  }
+  &__logoButtonLink{
+    @include elementsNoStyles;
+    @include MarginPadding
+  }
+  &__logoButton {
+    @include MarginPadding($margin: 0 0 0 50px);
+    width: 40px;
+    animation: rotation 3s linear infinite;
+    // animation-fill-mode: forwards;
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__buttonBurgerMenu {
+    display: none;
+    width: 32px;
+    height: 20px;
+    @include MarginPadding($margin: 0 40px 0 0);
+    &:hover {
+      cursor: pointer;
+      opacity: 70%;
+    }
+    @include screen1440px {
+      display: block;
+    }
+
+  }
+  &__closeIcon {
+    @include MarginPadding($margin: 0 34.41px 0 0);
+    display: none;
+    width: 32px;
+    height: 32px;
+    &:hover {
+      cursor: pointer;
+      opacity: 70%;
+    }
+  }
+}

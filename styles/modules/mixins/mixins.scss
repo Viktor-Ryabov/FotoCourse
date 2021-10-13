@@ -1,0 +1,142 @@
+@import "../variables/variables.scss";
+
+//---DISPLAY---
+@mixin flex(
+  $direction: column,
+  $justify: center,
+  $alignItems: center,
+  $alignContent: center
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $alignItems;
+  align-content: $alignContent;
+}
+
+//---POSITION---
+@mixin positionAbsolute($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+//---MARGIN-PADDING---
+@mixin MarginPadding($margin: 0, $padding: 0) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin elementsNoStyles {
+  list-style: none;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+//---FONTS---
+@mixin fontBold($fontSize, $lineHeigth: 100%) {
+  font-family: "Roboto_bold";
+  font-size: $fontSize;
+  line-height: $lineHeigth;
+}
+@mixin fontRegular($fontSize, $lineHeigth: 100%) {
+  font-family: "Roboto_regular";
+  font-size: $fontSize;
+  line-height: $lineHeigth;
+}
+
+//---BUTTON---
+@mixin buttonDesctopStyle {
+  line-height: 133%;
+  grid-area: button;
+  color: $blackColor;
+  background-color: $whiteColor;
+  width: 228px;
+  height: 49px;
+  border: 1px solid $blackColor;
+  border-radius: 24.5px;
+  &:hover {
+    @include fontBold(18px, 28px);
+  }
+}
+
+//---TABLET STYLES---
+@mixin screen1440px {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+@mixin tabletFoto {
+  width: calc(100% - 80px);
+  margin: 0 40px 60px 40px;
+}
+@mixin tabletTitle {
+  max-width: 617px;
+  margin: 40px auto 60px 40px;
+}
+@mixin tabletBlockName {
+  margin: 40px auto 40px 44px;
+}
+@mixin tabletButton {
+  max-width: 100%;
+  margin: 0 auto 40px 40px;
+  justify-self: flex-start;
+}
+@mixin tableText {
+  max-width: 469px;
+  margin: 0 auto 60px 44px;
+}
+
+@mixin tableSectionFlex {
+  @include flex(
+    $direction: column,
+    $justify: flex-start,
+    $alignItems: center,
+    $alignContent: center
+  );
+  width: 100%;
+}
+
+//---MOBILE STYLES---
+@mixin screen700px {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+@mixin phoneBlockName{
+  width: calc(100% - 40px);
+  border-top: 1px solid #000000;
+  font-size: 14px;
+  line-height: 20px;
+  @include MarginPadding($margin: 0 20px 30px 20px, $padding: 20px 0 0 0);
+}
+@mixin phoneTitile {
+  max-width: 282px;
+  margin: 14px auto 60px 20px;
+}
+@mixin phoneFoto {
+  width: calc(100% - 40px);
+  margin: 0 20px 60px 20px;
+}
+@mixin phoneText {
+  margin: 0 20px 30px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  width: calc(100% - 40px);
+  max-width: none;
+}
+@mixin phoneButton {
+  max-width: 100%;
+  margin: 0 auto 80px 20px;
+}
+
+//---ВИДИМОСТЬ---
+@mixin blockNotVisible {
+  display: none;
+}
+@mixin blockVisible {
+  display: block;
+}
