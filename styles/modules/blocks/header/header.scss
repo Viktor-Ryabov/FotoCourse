@@ -12,37 +12,29 @@
   &__list {
     @include elementsNoStyles;
     @include flex($direction: row);
-    @include screen1440px {
-      display: none;
-      @include MarginPadding($margin: 0 auto 0 40px);
-    }
-
   }
   &__links {
     @include elementsNoStyles;
     margin-right: 40px;
     color: $whiteColor;
   }
-
   &__link {
     @include fontRegular(16px);
     &:hover {
       @include fontBold(16px);
     }
-
     &:last-of-type {
       margin-right: 50px;
     }
   }
-  &__logoButtonLink{
+  &__logoButtonLink {
+    @include MarginPadding($margin: 0 0 0 50px);
     @include elementsNoStyles;
-    @include MarginPadding
+    
   }
   &__logoButton {
-    @include MarginPadding($margin: 0 0 0 50px);
     width: 40px;
     animation: rotation 3s linear infinite;
-    // animation-fill-mode: forwards;
     @keyframes rotation {
       0% {
         transform: rotate(0deg);
@@ -64,10 +56,6 @@
       cursor: pointer;
       opacity: 70%;
     }
-    @include screen1440px {
-      display: block;
-    }
-
   }
   &__closeIcon {
     @include MarginPadding($margin: 0 34.41px 0 0);
@@ -77,6 +65,66 @@
     &:hover {
       cursor: pointer;
       opacity: 70%;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .header {
+    &__list {
+      display: none;
+      @include MarginPadding($margin: 0 auto 0 40px);
+    }
+    &__logoButtonLink {
+      @include MarginPadding($margin: 0 0 0 20px);
+    }
+    &__buttonBurgerMenu {
+      display: block;
+      @include MarginPadding($margin: 0 20px 0 0);
+    }
+    &__logoButtonLink {
+      &_open {
+        display: none;
+      }
+    }
+    &__closeIcon {
+      @include MarginPadding($margin: 0 20px 0 0);
+    }
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    min-height: 74px;
+    &_phoneSize {
+      min-height: 179px;
+    }
+    &__list {
+      &_open {
+        @include flex($direction: column, $justify: center);
+        @include MarginPadding($margin: 0 auto 0 auto);
+        align-self: flex-end;
+      }
+    }
+    &__logoButtonLink {
+      &_open {
+        display: block;
+        align-self: flex-start;        
+        @include MarginPadding($margin: 20px 0 0 20px);
+      }
+    }
+    &__link {
+      @include MarginPadding($margin: 0 auto 12px auto);
+      &:last-of-type {
+        @include MarginPadding($margin: 0 auto 26px auto);
+      }
+    }
+    &__links{
+      @include MarginPadding;
+    }
+    &__closeIcon {
+      &_open {
+        align-self: flex-start;
+        @include MarginPadding($margin: 20px 20px 0 0);
+      }
     }
   }
 }

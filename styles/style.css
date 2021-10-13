@@ -46,13 +46,6 @@
   align-items: center;
   align-content: center;
 }
-@media (max-width: 1440px) {
-  .header__list {
-    display: none;
-    margin: 0 auto 0 40px;
-    padding: 0;
-  }
-}
 .header__links {
   list-style: none;
   list-style-type: none;
@@ -76,17 +69,15 @@
   margin-right: 50px;
 }
 .header__logoButtonLink {
+  margin: 0 0 0 50px;
+  padding: 0;
   list-style: none;
   list-style-type: none;
   border: none;
   text-decoration: none;
   cursor: pointer;
-  margin: 0;
-  padding: 0;
 }
 .header__logoButton {
-  margin: 0 0 0 50px;
-  padding: 0;
   width: 40px;
   -webkit-animation: rotation 3s linear infinite;
           animation: rotation 3s linear infinite;
@@ -121,11 +112,6 @@
   cursor: pointer;
   opacity: 70%;
 }
-@media (max-width: 1440px) {
-  .header__buttonBurgerMenu {
-    display: block;
-  }
-}
 .header__closeIcon {
   margin: 0 34.41px 0 0;
   padding: 0;
@@ -138,6 +124,70 @@
   opacity: 70%;
 }
 
+@media (max-width: 1440px) {
+  .header__list {
+    display: none;
+    margin: 0 auto 0 40px;
+    padding: 0;
+  }
+  .header__logoButtonLink {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+  .header__buttonBurgerMenu {
+    display: block;
+    margin: 0 20px 0 0;
+    padding: 0;
+  }
+  .header__logoButtonLink_open {
+    display: none;
+  }
+  .header__closeIcon {
+    margin: 0 20px 0 0;
+    padding: 0;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    min-height: 74px;
+  }
+  .header_phoneSize {
+    min-height: 179px;
+  }
+  .header__list_open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    align-self: flex-end;
+  }
+  .header__logoButtonLink_open {
+    display: block;
+    align-self: flex-start;
+    margin: 20px 0 0 20px;
+    padding: 0;
+  }
+  .header__link {
+    margin: 0 auto 12px auto;
+    padding: 0;
+  }
+  .header__link:last-of-type {
+    margin: 0 auto 26px auto;
+    padding: 0;
+  }
+  .header__links {
+    margin: 0;
+    padding: 0;
+  }
+  .header__closeIcon_open {
+    align-self: flex-start;
+    margin: 20px 20px 0 0;
+    padding: 0;
+  }
+}
 .fotoCourse {
   margin: 0;
   padding: 0;
@@ -546,16 +596,6 @@
   max-width: 400px;
   text-transform: uppercase;
 }
-<<<<<<< HEAD
-=======
-@media (max-width: 1440px) {
-  .camera__text {
-    margin: 40px auto 40px 44px;
-    margin-bottom: 180px;
-    margin-top: 0;
-  }
-}
->>>>>>> 4a9df709fe46c332b32120f35b19d117c66bf756
 .camera__foto {
   margin: 50px 50px 50px 0;
   padding: 0;

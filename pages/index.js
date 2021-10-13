@@ -2,12 +2,17 @@ const burgerMenuButton = document.querySelector("#burgerMenuButton");
 const mainMenuBlock = document.querySelector(".header__list");
 const logo = document.querySelector(".header__logoButton");
 const colseIconHeader = document.querySelector("#colseIconHeader");
+const header = document.querySelector(".header");
 
 const subscribeInput = document.querySelector("#singUpInput");
 const singUpButton = document.querySelector("#singUpButton");
 const singUpButton1 = document.querySelector(".studyComposition__button");
 const singUpButton2 = document.querySelector(".searchingOrders__button");
 const singUpBlock = document.querySelectorAll(".singUp");
+const listMenu = document.querySelector(".header__list");
+const headerLogo = document.querySelector(".header__logoButtonLink");
+const closeIcon = document.querySelector(".header__closeIcon");
+
 
 function addClassList(element, newClassList) {
   element.classList.add(newClassList);
@@ -18,18 +23,23 @@ function removeClassList(element, removableClassList) {
 
 function openHeaderMenu(button) {
   button.addEventListener("click", function () {
-    addClassList(logo, "effects_notVisible");
+    addClassList(closeIcon, "header__closeIcon_open");
+    addClassList(headerLogo, "header__logoButtonLink_open");
+    addClassList(listMenu, "header__list_open");
+    addClassList(header, "header_phoneSize");
     addClassList(burgerMenuButton, "effects_notVisible");
     addClassList(mainMenuBlock, "effects_visible");
     addClassList(colseIconHeader, "effects_visible");
-    console.log("re-re");
   });
 }
 openHeaderMenu(burgerMenuButton);
 
 function colseHeaderMenu(button) {
   button.addEventListener("click", function () {
-    removeClassList(logo, "effects_notVisible");
+    removeClassList(closeIcon, "header__closeIcon_open");
+    removeClassList(headerLogo, "header__logoButtonLink_open");
+    removeClassList(listMenu, "header__list_open");
+    removeClassList(header, "header_phoneSize");
     removeClassList(burgerMenuButton, "effects_notVisible");
     removeClassList(mainMenuBlock, "effects_visible");
     removeClassList(colseIconHeader, "effects_visible");
