@@ -1,17 +1,17 @@
-const burgerMenuButton = document.querySelector("#burgerMenuButton");
+const burgerMenuButton = document.querySelector("#burger-menuButton");
 const mainMenuBlock = document.querySelector(".header__list");
-const logo = document.querySelector(".header__logoButton");
-const colseIconHeader = document.querySelector("#colseIconHeader");
+const logo = document.querySelector(".header__logo-button");
+const colseIconHeader = document.querySelector("#colse-iconHeader");
 const header = document.querySelector(".header");
 
-const subscribeInput = document.querySelector("#singUpInput");
-const singUpButton = document.querySelector("#singUpButton");
-const singUpButton1 = document.querySelector(".studyComposition__button");
-const singUpButton2 = document.querySelector(".searchingOrders__button");
-const singUpBlock = document.querySelectorAll(".singUp");
+const subscribeInput = document.querySelector("#sing-up-input");
+const singUpButton = document.querySelector("#sing-up-button");
+const singUpButton1 = document.querySelector(".study-composition__button");
+const singUpButton2 = document.querySelector(".searching-orders__button");
+const singUpBlock = document.querySelectorAll(".sing-up");
 const listMenu = document.querySelector(".header__list");
-const headerLogo = document.querySelector(".header__logoButtonLink");
-const closeIcon = document.querySelector(".header__closeIcon");
+const headerLogo = document.querySelector(".header__logo-button-link");
+const closeIcon = document.querySelector(".header__close-icon");
 
 
 function addClassList(element, newClassList) {

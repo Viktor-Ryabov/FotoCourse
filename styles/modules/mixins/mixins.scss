@@ -37,12 +37,14 @@
 
 //---FONTS---
 @mixin fontBold($fontSize, $lineHeigth: 100%) {
-  font-family: "Roboto_bold";
+  font-family: "Roboto";
+  font-weight: 700;
   font-size: $fontSize;
   line-height: $lineHeigth;
 }
 @mixin fontRegular($fontSize, $lineHeigth: 100%) {
-  font-family: "Roboto_regular";
+  font-family: "Roboto";
+  font-weight: 400;
   font-size: $fontSize;
   line-height: $lineHeigth;
 }

@@ -1,7 +1,7 @@
 @import "../../variables/variables.scss";
 @import "../../mixins/mixins.scss";
 
-.studyComposition {
+.study-composition {
   @include MarginPadding;
   max-width: 100%;
   background-color: $yellowColor;
@@ -13,7 +13,7 @@
     "text_2 foto"
     "button foto"
     "rules rules";
-  &__blockName {
+  &__block-name {
     @include MarginPadding($margin: 50px 0 50px 54px);
     @include fontRegular(18px, 28px);
     grid-area: blockName;
@@ -39,7 +39,7 @@
       color: $blackColor;
     }
   }
-  &__text_2 {
+  &__text_two {
     @include MarginPadding($margin: 0 0 198px 54px);
     @include fontRegular(18px, 28px);
     color: $blackColor;
@@ -63,7 +63,7 @@
     @include flex($direction: row, $justify: space-between, $alignItems: top);
     grid-area: rules;
   }
-  &__compositionRule {
+  &__composition-rule {
     @include MarginPadding;
     width: 291px;
     @include fontRegular(18px, 28px);
@@ -73,9 +73,9 @@
 }
 
 @media (max-width: 1440px) {
-  .studyComposition {
+  .study-composition {
     @include tableSectionFlex;
-    &__blockName {
+    &__block-name {
       @include tabletBlockName;
     }
     &__title {
@@ -84,7 +84,7 @@
     &__text {
       @include tableText;
     }
-    &__text_2 {
+    &__text_two {
       @include tableText;
     }
     &__button {
@@ -102,7 +102,7 @@
         $alignItems: center
       );
     }
-    &__compositionRule {
+    &__composition-rule {
       width: calc(100% - 80px);
       padding-top: 30px;
       padding-bottom: 30px;
@@ -116,9 +116,9 @@
 }
 
 @media (max-width: 700px) {
-  .studyComposition {
+  .study-composition {
     max-width: 100%;
-    &__blockName {
+    &__block-name {
       @include phoneBlockName;
       margin-top: 40px;
     }
@@ -134,7 +134,7 @@
         line-height: 18px;
       }
     }
-    &__text_2 {
+    &__text_two {
       @include phoneText;
     }
     &__button {
@@ -152,7 +152,7 @@
         $alignItems: center
       );
     }
-    &__compositionRule {
+    &__composition-rule {
       @include phoneText;
       @include MarginPadding($margin: 14px 20px 0 20px, $padding: 0 0 14px 0);
       width: calc(100% - 40px);

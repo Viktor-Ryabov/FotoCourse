@@ -1,0 +1,78 @@
+@import "../../variables/variables.scss";
+@import "../../mixins/mixins.scss";
+
+.сourse {
+  @include MarginPadding;
+  width: 100%;
+  background-color: $whiteColor;
+  display: grid;
+  grid-template-areas:
+    "title foto"
+    "text foto"
+    "button foto";
+  &__title {
+    @include MarginPadding($margin: 50px 0 60px 48px);
+    @include fontRegular(100px);
+    line-height: 110px;
+    grid-area: title;
+    color: $blackColor;
+  }
+  &__text {
+    @include MarginPadding($margin: 0 0 170px 54px);
+    @include fontRegular(20px);
+    color: $blackColor;
+    line-height: 118%;
+    grid-area: text;
+    max-width: 469px;
+  }
+  &__button {
+    @include MarginPadding($margin: 0 0 50px 50px);
+    @include elementsNoStyles;
+    @include fontRegular(18px);
+    @include flex($justify: center, $alignItems: center);
+    @include buttonDesctopStyle;
+    grid-area: button;
+  }
+  &__foto {
+    @include MarginPadding($margin: 50px 50px 50px 0);
+    grid-area: foto;
+  }
+}
+
+@media (max-width: 1440px) {
+  .foto-сourse {
+    @include tableSectionFlex;
+    &__title {
+      @include tabletTitle;
+    }
+    &__text {
+      @include tableText;
+    }
+    &__button {
+      @include tabletButton;
+    }
+    &__foto {
+      @include tabletFoto;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .foto-сourse {
+    &__title {
+      @include phoneTitile;
+      font-size: 47px;
+      line-height: 56px;
+    }
+    &__text {
+      @include phoneText;
+    }
+    &__button {
+      @include phoneButton;
+      margin-bottom: 20px;
+    }
+    &__foto {
+      @include phoneFoto;
+    }
+  }
+}

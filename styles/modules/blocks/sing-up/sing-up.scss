@@ -1,14 +1,11 @@
 @import "../../variables/variables.scss";
 @import "../../mixins/mixins.scss";
 
-.singUp {
+.sing-up {
   @include MarginPadding;
   width: 100%;
   background-color: $redColor;
-  @include screen1440px {
-    @include tableSectionFlex;
-  }
-  &__callToAction {
+  &__call-to-action {
     @include MarginPadding;
     @include flex(
       $direction: row,
@@ -16,16 +13,13 @@
       $alignItems: flex-start
     );
     width: 100%;
-    @include screen1440px {
-      @include tableSectionFlex;
-    }
   }
   &__arrow {
     @include MarginPadding($margin: 60px 50px 0 50px);
     width: 129px;
     height: 95px;
   }
-  &__h2 {
+  &__title {
     @include MarginPadding($margin: 50px 0 120px 0);
     @include fontRegular(120px, 120px);
     max-width: 685px;
@@ -72,11 +66,10 @@
   }
 }
 
-
 @media (max-width: 1440px) {
-  .singUp {
+  .sing-up {
     @include tableSectionFlex;
-    &__h2 {
+    &__title {
       @include tabletTitle;
       font-size: 100px;
       line-height: 100px;
@@ -93,19 +86,17 @@
     &__arrow {
       display: none;
     }
-    &__inputs{
-    }
-    &__input{
+    &__input {
       margin: 0 0 80px 40px;
     }
   }
 }
 
 @media (max-width: 700px) {
-  .singUp {
+  .sing-up {
     padding-top: 40px;
     max-width: 100%;
-    &__h2 {
+    &__title {
       border-top: white solid 1px;
       @include fontRegular($fontSize: 48px, $lineHeigth: 50px);
       @include MarginPadding($margin: 0 20px 270px 20px, $padding: 20px 0 0 0);

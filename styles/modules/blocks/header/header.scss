@@ -27,27 +27,29 @@
       margin-right: 50px;
     }
   }
-  &__logoButtonLink {
+  &__logo-button-link {
     @include MarginPadding($margin: 0 0 0 50px);
     @include elementsNoStyles;
     
   }
-  &__logoButton {
+  &__logo-button {
     width: 40px;
-    animation: rotation 3s linear infinite;
-    @keyframes rotation {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(-360deg);
-      }
-    }
     &:hover {
-      cursor: pointer;
+      animation: rotation 3s linear infinite;
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
-  &__buttonBurgerMenu {
+  &__button-burger-menu {
     display: none;
     width: 32px;
     height: 20px;
@@ -57,7 +59,7 @@
       opacity: 70%;
     }
   }
-  &__closeIcon {
+  &__close-icon {
     @include MarginPadding($margin: 0 34.41px 0 0);
     display: none;
     width: 32px;
@@ -74,19 +76,19 @@
       display: none;
       @include MarginPadding($margin: 0 auto 0 40px);
     }
-    &__logoButtonLink {
+    &__logo-button-link {
       @include MarginPadding($margin: 0 0 0 20px);
     }
-    &__buttonBurgerMenu {
+    &__button-burger-menu {
       display: block;
       @include MarginPadding($margin: 0 20px 0 0);
     }
-    &__logoButtonLink {
+    &__logo-button-link {
       &_open {
         display: none;
       }
     }
-    &__closeIcon {
+    &__close-icon {
       @include MarginPadding($margin: 0 20px 0 0);
     }
   }
@@ -104,7 +106,7 @@
         align-self: flex-end;
       }
     }
-    &__logoButtonLink {
+    &__logo-button-link {
       &_open {
         display: block;
         align-self: flex-start;        
@@ -120,7 +122,7 @@
     &__links{
       @include MarginPadding;
     }
-    &__closeIcon {
+    &__close-icon {
       &_open {
         align-self: flex-start;
         @include MarginPadding($margin: 20px 20px 0 0);

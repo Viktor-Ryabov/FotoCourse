@@ -13,7 +13,7 @@
     "feedback1 feedback2"
     "name1 name2"
     "mail1 mail2";
-  &__blockName {
+  &__block-name {
     @include MarginPadding($margin: 50px 0 50px 54px);
     @include fontRegular(18px, 28px);
     grid-area: blockName;
@@ -39,41 +39,41 @@
     @include MarginPadding($margin: 50px 50px 50px 0);
     grid-area: foto;
   }
-  &__feedbackText {
+  &__feedback-text {
     @include MarginPadding($margin: 0 0 60px 50px);
     @include fontRegular(43px, 43.2px);
     color: $whiteColor;
-    &_1 {
+    &_one {
       @include MarginPadding($margin: 0 172px 60px 50px);
       max-width: 526px;
       grid-area: feedback1;
     }
-    &_2 {
+    &_two {
       @include MarginPadding($margin: 0 auto 60px 0);
       max-width: 497px;
       grid-area: feedback2;
     }
   }
-  &__feedbackName {
+  &__feedback-name {
     @include MarginPadding($margin: 0 0 10px 50px);
     @include fontRegular(18px, 28px);
     color: $whiteColor;
-    &_1 {
+    &_one {
       grid-area: name1;
     }
-    &_2 {
+    &_two {
       margin-left: 0;
       grid-area: name2;
     }
   }
-  &__feedbackMail {
+  &__feedback-mail {
     @include MarginPadding($margin: 0 0 50px 50px);
     @include fontRegular(14px, 24px);
     color: $whiteColor;
-    &_1 {
+    &_one {
       grid-area: mail1;
     }
-    &_2 {
+    &_two {
       grid-area: mail2;
       margin-left: 0;
     }
@@ -83,7 +83,7 @@
 @media (max-width: 1440px) {
   .camera {
     @include tableSectionFlex;
-    &__blockName {
+    &__block-name {
       @include tabletBlockName;
     }
     &__title {
@@ -92,39 +92,39 @@
     &__text {
       @include tableText;
     }
-    &__feedbackText {
-      &_1 {
+    &__feedback-text {
+      &_one {
         @include tableText;
         max-width: 526px;
         margin-left: 40px;
       }
-      &_2{
+      &_two{
         @include tableText;
         max-width: 526px;
         margin-left: 40px;
       }
     }
-    &__feedbackName {
+    &__feedback-name {
       @include tableText;
-      &_1 {
+      &_one {
           @include tableText;
           margin-bottom: 10px;
         }
-      &_2 {
+      &_two {
           @include tableText;
           margin-bottom: 10px;
         }
     }
-    &__feedbackMail {
+    &__feedback-mail {
       @include tableText;
-      &_1 {
+      &_one {
           @include tableText;
           max-width: none;
           width: calc(100% - 80px);
           padding-bottom: 60px;
           border-bottom: 1px solid #ffffff;
         }
-      &_2 {
+      &_two {
           @include tableText;
           padding-bottom: 40px;
           margin-bottom: 0;
@@ -142,7 +142,7 @@
 @media (max-width: 700px) {
   .camera {
     max-width: 100%;
-    &__blockName {
+    &__block-name {
       @include phoneBlockName;
       margin-top: 40px;
       border-top: #ffffff 1px solid;
@@ -157,18 +157,18 @@
       @include phoneText;
       margin-bottom: 60px;
     }
-    &__feedbackText {
+    &__feedback-text {
       @include MarginPadding($margin: 0 0 30px 0);
       @include phoneText;
       font-size: 24px;
       line-height: 26px;
     }
-    &__feedbackName {
+    &__feedback-name {
       @include phoneText;
       @include MarginPadding($margin: 0 0 6px 0);
       line-height: 20px;
     }
-    &__feedbackMail {
+    &__feedback-mail {
       @include phoneText;
       @include MarginPadding($margin: 0 0 30px 0, $padding: 0 0 30px 0);
       font-size: 14px;

@@ -1,7 +1,7 @@
 @import "../../variables/variables.scss";
 @import "../../mixins/mixins.scss";
 
-.searchingOrders {
+.searching-orders {
   @include MarginPadding($padding: 0 0 50px 0);
   width: 100%;
   background-color: $whiteColor;
@@ -11,7 +11,7 @@
     "title text1"
     "foto text1"
     "foto button";
-  &__blockName {
+  &__block-name {
     @include MarginPadding($margin: 50px 0 50px 54px);
     @include fontRegular(18px, 28px);
     grid-area: blockName;
@@ -50,9 +50,9 @@
 }
 
 @media (max-width: 1440px) {
-  .searchingOrders {
+  .searching-orders {
     @include tableSectionFlex;
-    &__blockName {
+    &__block-name {
       @include tabletBlockName;
     }
     &__title {
@@ -71,10 +71,10 @@
 }
 
 @media (max-width: 700px) {
-  .searchingOrders {
+  .searching-orders {
     padding-top: 40px;
     max-width: 100%;
-    &__blockName {
+    &__block-name {
       @include phoneBlockName;
       border-top: black solid 1px;
     }
