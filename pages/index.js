@@ -1,7 +1,7 @@
-const burgerMenuButton = document.querySelector("#burger-menuButton");
+const burgerMenuButton = document.querySelector("#burger-menu-button");
 const mainMenuBlock = document.querySelector(".header__list");
 const logo = document.querySelector(".header__logo-button");
-const colseIconHeader = document.querySelector("#colse-iconHeader");
+const colseIconHeader = document.querySelector("#colse-icon-header");
 const header = document.querySelector(".header");
 
 const subscribeInput = document.querySelector("#sing-up-input");
@@ -23,26 +23,34 @@ function removeClassList(element, removableClassList) {
 
 function openHeaderMenu(button) {
   button.addEventListener("click", function () {
-    addClassList(closeIcon, "header__closeIcon_open");
-    addClassList(headerLogo, "header__logoButtonLink_open");
+    addClassList(closeIcon, "header__close-icon_open");
+    addClassList(headerLogo, "header__logo-button-link_open");
     addClassList(listMenu, "header__list_open");
-    addClassList(header, "header_phoneSize");
-    addClassList(burgerMenuButton, "effects_notVisible");
+    addClassList(header, "header_phone-size");
+    addClassList(burgerMenuButton, "effects_not-visible");
     addClassList(mainMenuBlock, "effects_visible");
     addClassList(colseIconHeader, "effects_visible");
+    burgerMenuButton.style.display = "none";
+    mainMenuBlock.style.display = "flex";
+    colseIconHeader.style.display = "block";
+    
   });
 }
 openHeaderMenu(burgerMenuButton);
 
 function colseHeaderMenu(button) {
   button.addEventListener("click", function () {
-    removeClassList(closeIcon, "header__closeIcon_open");
-    removeClassList(headerLogo, "header__logoButtonLink_open");
+    removeClassList(closeIcon, "header__close-icon_open");
+    removeClassList(headerLogo, "header__logo-button-link_open");
     removeClassList(listMenu, "header__list_open");
-    removeClassList(header, "header_phoneSize");
-    removeClassList(burgerMenuButton, "effects_notVisible");
+    removeClassList(header, "header_phone-size");
+    removeClassList(burgerMenuButton, "effects_not-visible");
     removeClassList(mainMenuBlock, "effects_visible");
     removeClassList(colseIconHeader, "effects_visible");
+    burgerMenuButton.style.display = "block";
+    mainMenuBlock.style.display = "none";
+    colseIconHeader.style.display = "none";
+
   });
 }
 colseHeaderMenu(colseIconHeader);
@@ -53,7 +61,8 @@ function addInputListener(input) {
 addInputListener(subscribeInput);
 
 function sendEmailForSubscribe(button, input) {
-  button.addEventListener("click", function () {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
     button.textContent = "Спасибо!";
     input.value = "";
   });

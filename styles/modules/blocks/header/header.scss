@@ -34,20 +34,6 @@
   }
   &__logo-button {
     width: 40px;
-    &:hover {
-      animation: rotation 3s linear infinite;
-      @keyframes rotation {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(-360deg);
-        }
-      }
-      &:hover {
-        cursor: pointer;
-      }
-    }
   }
   &__button-burger-menu {
     display: none;
@@ -70,7 +56,7 @@
     }
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   .header {
     &__list {
       display: none;
@@ -96,7 +82,7 @@
 @media (max-width: 700px) {
   .header {
     min-height: 74px;
-    &_phoneSize {
+    &_phone-size {
       min-height: 179px;
     }
     &__list {

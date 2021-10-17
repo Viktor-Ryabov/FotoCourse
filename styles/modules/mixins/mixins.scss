@@ -65,7 +65,7 @@
 }
 
 //---TABLET STYLES---
-@mixin screen1440px {
+@mixin screen1439px {
   @media (max-width: 1440px) {
     @content;
   }

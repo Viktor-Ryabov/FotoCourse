@@ -1,7 +1,7 @@
 @import "../../variables/variables.scss";
 @import "../../mixins/mixins.scss";
 
-.сourse {
+.foto-course {
   @include MarginPadding;
   width: 100%;
   background-color: $whiteColor;
@@ -17,6 +17,7 @@
     grid-area: title;
     color: $blackColor;
   }
+
   &__text {
     @include MarginPadding($margin: 0 0 170px 54px);
     @include fontRegular(20px);
@@ -39,8 +40,8 @@
   }
 }
 
-@media (max-width: 1440px) {
-  .foto-сourse {
+@media (max-width: 1439px){
+  .foto-course {
     @include tableSectionFlex;
     &__title {
       @include tabletTitle;
@@ -48,17 +49,17 @@
     &__text {
       @include tableText;
     }
-    &__button {
+    &__button{
       @include tabletButton;
     }
-    &__foto {
+    &__foto{
       @include tabletFoto;
     }
   }
 }
 
-@media (max-width: 700px) {
-  .foto-сourse {
+@media (max-width: 700px){
+  .foto-course {
     &__title {
       @include phoneTitile;
       font-size: 47px;
@@ -67,11 +68,11 @@
     &__text {
       @include phoneText;
     }
-    &__button {
+    &__button{
       @include phoneButton;
       margin-bottom: 20px;
     }
-    &__foto {
+    &__foto{
       @include phoneFoto;
     }
   }
