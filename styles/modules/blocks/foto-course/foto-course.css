@@ -1,0 +1,122 @@
+.foto-course {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-areas: "title foto" "text foto" "button foto";
+}
+.foto-course__title {
+  margin: 50px 0 60px 48px;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100%;
+  line-height: 110px;
+  grid-area: title;
+  color: #000000;
+}
+.foto-course__text {
+  margin: 0 0 170px 54px;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000000;
+  line-height: 118%;
+  grid-area: text;
+  max-width: 469px;
+}
+.foto-course__button {
+  margin: 0 0 50px 50px;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  line-height: 133%;
+  grid-area: button;
+  color: #000000;
+  background-color: #FFFFFF;
+  width: 228px;
+  height: 49px;
+  border: 1px solid #000000;
+  border-radius: 24.5px;
+  grid-area: button;
+}
+.foto-course__button:hover {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+.foto-course__foto {
+  margin: 50px 50px 50px 0;
+  padding: 0;
+  grid-area: foto;
+}
+
+@media (max-width: 1439px) {
+  .foto-course {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+  .foto-course__title {
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
+  }
+  .foto-course__text {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+  }
+  .foto-course__button {
+    max-width: 100%;
+    margin: 0 auto 40px 40px;
+    justify-self: flex-start;
+  }
+  .foto-course__foto {
+    width: calc(100% - 80px);
+    margin: 0 40px 60px 40px;
+  }
+}
+@media (max-width: 700px) {
+  .foto-course__title {
+    max-width: 282px;
+    margin: 14px auto 60px 20px;
+    font-size: 47px;
+    line-height: 56px;
+  }
+  .foto-course__text {
+    margin: 0 20px 30px 20px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    width: calc(100% - 40px);
+    max-width: none;
+  }
+  .foto-course__button {
+    max-width: 100%;
+    margin: 0 auto 80px 20px;
+    margin-bottom: 20px;
+  }
+  .foto-course__foto {
+    width: calc(100% - 40px);
+    margin: 0 20px 60px 20px;
+  }
+}/*# sourceMappingURL=foto-course.css.map */

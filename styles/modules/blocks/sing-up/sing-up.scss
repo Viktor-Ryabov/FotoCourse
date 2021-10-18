@@ -21,8 +21,11 @@
       content: "";
       width: 129px;
       height: 95px; 
-      background: url("../../../../images/arrow-footer.svg") no-repeat center center; 
-      display: block;
+      background: url(https://s345vla.storage.yandex.net/rdisk/bcb196654288f6cc0f08da362d6b04d5b268971175464604e8f4b38cb7b8c7ab/616d8ef0/jFGrN-sFptMlepfW19_DQxBEaSaNShXfYbgZq7lFC45oZCsp4l7nekCY5vJs81ea079870F6R2Qhll2Yf9UF7g==?uid=556860284&filename=arrow-footer.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=556860284&fsize=625&hid=011f7c002583c425b6c09de60e11e8b0&media_type=image&tknv=v2&etag=5dcef709c9e50568c83aca891c61cab3&rtoken=zbRZgRZEiCIY&force_default=yes&ycrid=na-e70efe9111f019d62b477ad71e53ac43-downloader17h&ts=5cea1fa4d9c00&s=87a80a6467a69fd27f614aa30d659e1585678ce404ccf59f5c8657f3be58b821&pb=U2FsdGVkX1-9I5vxSjdGhH5cu3JviuVeBSzoCMmXJ7poYWeAQuMBBST2RneHYTtMq1DcD4M8YsU_AkHleyyAExDar7ozQ2B1Mx2LyP-w9ic);
+      background-size: cover;
+      position: absolute;
+      left: -180px;
+      top: 10px;
     }
 
       // @include MarginPadding($margin: 60px 50px 0 50px);

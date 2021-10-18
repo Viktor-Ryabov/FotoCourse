@@ -1,0 +1,255 @@
+.camera {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #000000;
+  display: grid;
+  grid-template-areas: "blockName foto" "title foto" "link foto" "feedback1 feedback2" "name1 name2" "mail1 mail2";
+}
+.camera__block-name {
+  margin: 50px 0 50px 54px;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  grid-area: blockName;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.camera__title {
+  margin: 0 81px 359px 50px;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 122px;
+  line-height: 122.4px;
+  max-width: 617px;
+  grid-area: title;
+  color: #FFFFFF;
+}
+.camera__text {
+  margin: 0 0 180px 54px;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  grid-area: link;
+  max-width: 400px;
+  text-transform: uppercase;
+}
+.camera__foto {
+  margin: 50px 50px 50px 0;
+  padding: 0;
+  grid-area: foto;
+}
+.camera__feedback-text {
+  margin: 0 0 60px 50px;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 43.2px;
+  color: #FFFFFF;
+}
+.camera__feedback-text_one {
+  margin: 0 172px 60px 50px;
+  padding: 0;
+  max-width: 526px;
+  grid-area: feedback1;
+}
+.camera__feedback-text_two {
+  margin: 0 auto 60px 0;
+  padding: 0;
+  max-width: 497px;
+  grid-area: feedback2;
+}
+.camera__feedback-name {
+  margin: 0 0 10px 50px;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.camera__feedback-name_one {
+  grid-area: name1;
+}
+.camera__feedback-name_two {
+  margin-left: 0;
+  grid-area: name2;
+}
+.camera__feedback-mail {
+  margin: 0 0 50px 50px;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.camera__feedback-mail_one {
+  grid-area: mail1;
+}
+.camera__feedback-mail_two {
+  grid-area: mail2;
+  margin-left: 0;
+}
+
+@media (max-width: 1439px) {
+  .camera {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+  .camera__block-name {
+    margin: 40px auto 40px 44px;
+  }
+  .camera__title {
+    max-width: 617px;
+    margin: 40px auto 60px 40px;
+  }
+  .camera__text {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+  }
+  .camera__feedback-text_one {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    max-width: 526px;
+    margin-left: 40px;
+  }
+  .camera__feedback-text_two {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    max-width: 526px;
+    margin-left: 40px;
+  }
+  .camera__feedback-name {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+  }
+  .camera__feedback-name_one {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    margin-bottom: 10px;
+  }
+  .camera__feedback-name_two {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    margin-bottom: 10px;
+  }
+  .camera__feedback-mail {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+  }
+  .camera__feedback-mail_one {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    max-width: none;
+    width: calc(100% - 80px);
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ffffff;
+  }
+  .camera__feedback-mail_two {
+    max-width: 469px;
+    margin: 0 auto 60px 44px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+  }
+  .camera__button {
+    max-width: 100%;
+    margin: 0 auto 40px 40px;
+    justify-self: flex-start;
+  }
+  .camera__foto {
+    width: calc(100% - 80px);
+    margin: 0 40px 60px 40px;
+  }
+}
+@media (max-width: 700px) {
+  .camera {
+    max-width: 100%;
+  }
+  .camera__block-name {
+    width: calc(100% - 40px);
+    border-top: 1px solid #000000;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 20px 30px 20px;
+    padding: 20px 0 0 0;
+    margin-top: 40px;
+    border-top: #ffffff 1px solid;
+  }
+  .camera__title {
+    max-width: 282px;
+    margin: 14px auto 60px 20px;
+    max-width: 243px;
+    font-size: 48px;
+    line-height: 56.25px;
+  }
+  .camera__text {
+    margin: 0 20px 30px 20px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    width: calc(100% - 40px);
+    max-width: none;
+    margin-bottom: 60px;
+  }
+  .camera__feedback-text {
+    margin: 0 0 30px 0;
+    padding: 0;
+    margin: 0 20px 30px 20px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    width: calc(100% - 40px);
+    max-width: none;
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .camera__feedback-name {
+    margin: 0 20px 30px 20px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    width: calc(100% - 40px);
+    max-width: none;
+    margin: 0 0 6px 0;
+    padding: 0;
+    line-height: 20px;
+  }
+  .camera__feedback-mail {
+    margin: 0 20px 30px 20px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    width: calc(100% - 40px);
+    max-width: none;
+    margin: 0 0 30px 0;
+    padding: 0 0 30px 0;
+    font-size: 14px;
+    line-height: 12px;
+    border-bottom: #ffffff 1px solid;
+  }
+  .camera__feedback-mail:last-of-type {
+    margin: 0 0 20px 0;
+    padding: 0;
+    border-bottom: none;
+  }
+  .camera__button {
+    max-width: 100%;
+    margin: 0 auto 80px 20px;
+  }
+  .camera__foto {
+    width: calc(100% - 40px);
+    margin: 0 20px 60px 20px;
+  }
+}/*# sourceMappingURL=camera.css.map */
