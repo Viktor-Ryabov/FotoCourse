@@ -1,0 +1,10 @@
+.page {
+    @include MarginPadding ($margin: 0 auto);
+    @include flex;
+    max-width: 1440px;
+    background-color: #FFFFFF;
+    @include screen1439px{
+        max-width: 100%;
+        align-items: stretch;
+    }
+}

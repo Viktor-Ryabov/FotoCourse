@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Крус по фотографии</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <a href="#foto-course" class="header__logo-button-link">
+        <img
+          src="./images/header__logo-arrow.svg"
+          alt="логотип"
+          class="header__logo-button animation-logo"
+        />
+      </a>
+      <img
+        id="burger-menu-button"
+        src="./images/button-burger-menu.svg"
+        alt="меню"
+        class="header__button-burger-menu"
+        type="button"
+      />
+      <ul class="header__list">
+        <li class="header__link">
+          <a class="header__links" href="#study-composition">Композиция</a>
+        </li>
+        <li class="header__link">
+          <a class="header__links" href="#camera">Камера</a>
+        </li>
+        <li class="header__link">
+          <a class="header__links" href="#searching-orders">Поиск заказов</a>
+        </li>
+      </ul>
+      <img
+        id="colse-icon-header"
+        src="./images/close-icon.svg"
+        alt="Закрыть"
+        class="header__close-icon"
+      />
+    </header>
+
+    <main>
+      <section class="foto-course" id="foto-course">
+        <h1 class="foto-course__title">Курс по фотографии</h1>
+        <img
+          src="./images/forest-in-a-fog.png"
+          alt="лес в тумане"
+          class="foto-course__foto"
+        />
+        <p class="foto-course__text">
+          Фотография в природных условиях, уроки по композиции и по пользованию
+          камерой.
+        </p>
+        <button class="foto-course__button" type="button">Подробнее</button>
+      </section>
+
+      <section class="study-composition" id="study-composition">
+        <p class="study-composition__block-name">Композиция</p>
+        <h3 class="study-composition__title">Изучите композицию</h3>
+        <img
+          src="./images/road-in-a-forest.png"
+          alt="дорога в лесу"
+          class="study-composition__foto"
+        />
+        <p class="study-composition__text">
+          Вы изучите гармоничное размещение всех элементов изображения на
+          <a href="#" class="study-composition__text_link">снимке</a>.
+        </p>
+        <p class="study-composition__text_two">
+          Изучите композицию интуитивную и какие-то определённые законы.
+        </p>
+        <button class="study-composition__button" type="button">
+          Записаться!
+        </button>
+        <ul class="study-composition__rules">
+          <li class="study-composition__composition-rule">
+            Правило третей, при котором нужно распологать объекты на
+            пересечениях.
+          </li>
+          <li class="study-composition__composition-rule">
+            Простота: убирай всё лишнее и кадрируй!
+          </li>
+          <li class="study-composition__composition-rule">
+            Равновесие: уравновесь пятна объекта и фона.
+          </li>
+          <li class="study-composition__composition-rule">
+            3D глубина кадра: расположи объект позади и перед другими
+            предметами.
+          </li>
+        </ul>
+      </section>
+
+      <section class="camera" id="camera">
+        <p class="camera__block-name">камера</p>
+        <h3 class="camera__title">Настройка Съемка Обработка</h3>
+        <img
+          src="./images/green-forest.png"
+          alt="густой зеленый лес"
+          class="camera__foto"
+        />
+        <p class="camera__text">отзывы про часть о камерах:</p>
+        <p class="camera__feedback-text camera__feedback-text_one">
+          на этом курсе я научился пользоватся камерой, как настоящий
+          профессионал!
+        </p>
+        <p class="camera__feedback-name camera__feedback-name_one">
+          Питер, водитель.
+        </p>
+        <p class="camera__feedback-mail camera__feedback-mail_one">@piter123</p>
+        <p class="camera__feedback-text camera__feedback-text_two">
+          супер крутой курс! <br />на части про фотики я стал разбираться в
+          предназначении кнопок
+        </p>
+        <p class="camera__feedback-name camera__feedback-name_two">
+          Джон, спортсмен.
+        </p>
+        <p class="camera__feedback-mail camera__feedback-mail_two">
+          @john_sport
+        </p>
+      </section>
+
+      <section class="searching-orders" id="searching-orders">
+        <p class="searching-orders__block-name">поиск заказов</p>
+        <h3 class="searching-orders__title">Научим находить заказы!</h3>
+        <img
+          src="./images/tree-dow-up.png"
+          alt="дерево снизу вверх"
+          class="searching-orders__foto"
+        />
+        <p class="searching-orders__text">
+          Мы научим вас искать заказы на всяких фриланс биржах, а когда вы
+          сделаете крутое портфолио, мы поможем найти постоянную работу.
+        </p>
+        <button class="searching-orders__button" type="button">
+          Записаться!
+        </button>
+      </section>
+    </main>
+
+    <footer class="sing-up">
+      <h2 class="sing-up__title">Записаться! Сейчас!</h2>
+      <form class="sing-up__inputs" name="sing-up-inputs">
+        <input
+          name="sing-up-input"
+          id="sing-up-input"
+          value="Ваша почта"
+          type="text"
+          class="sing-up__input"
+        />
+        <button class="sing-up__button" id="sing-up-button" type="submit">
+          Записаться!
+        </button>
+      </form>
+      <p class="sing-up__since">2021 Photo-lessons.</p>
+    </footer>
+
+    <template> </template>
+
+    <script src="./pages/index.js"></script>
+  </body>
+</html>
